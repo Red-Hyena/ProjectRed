@@ -7,7 +7,97 @@
 }
 
 h1 {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 32px;
   color: #292929;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #292929;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #292929;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3D3D3D;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #033A2D;
+  text-transform: uppercase;
+}
+
+button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.cardText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #292929;
+}
+
+input:placeholder-shown {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #525252;
+}
+
+input {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3D3D3D;
+}
+
+@media (min-width: 960px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  a {
+    font-size: 1.125rem;
+  }
+  button {
+    font-size: 1.125rem;
+  }
+  .cardText {
+    font-size: 1.125rem;
+  }
+  label {
+    font-size: 1.25rem;
+  }
+  input:placeholder-shown {
+    font-size: 1.25rem;
+  }
+  input {
+    font-size: 1.25rem;
+  }
 }
