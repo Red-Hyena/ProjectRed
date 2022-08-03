@@ -1,6 +1,93 @@
-// Headers Mobile
+// Headers Base
 h1 {
+    font-size: 2rem;
     font-weight: 700;
-    font-size: 32px;
     color: $black;
+}
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $black;
+}
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $black;
+}
+
+// Text Base
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $neutral_900;
+}
+a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $primary_1000;
+    text-transform: uppercase;
+}
+// Buttons & Inputs Base
+button {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $white;
+    text-transform: uppercase;
+}
+.cardText {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $white;
+    text-transform: uppercase;
+}
+label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $black;
+}
+input:placeholder-shown {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $neutral_800;
+}
+input {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $neutral_900;
+}
+
+@include lg {
+    // Headers
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    // Text
+    p {
+        font-size: 1.25rem;
+    }
+    a {
+        font-size: 1.125rem;
+    }
+    // Buttons & Inputs
+    button {
+        font-size: 1.125rem;
+    }
+    .cardText {
+        font-size: 1.125rem;
+    }
+    label {
+        font-size: 1.25rem;
+    }
+    input:placeholder-shown {
+        font-size: 1.25rem;
+    }
+    input {
+        font-size: 1.25rem;
+    }
 }
