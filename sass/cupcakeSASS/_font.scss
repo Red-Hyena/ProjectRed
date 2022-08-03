@@ -56,7 +56,7 @@ input {
     color: $neutral_900;
 }
 
-@include lg {
+@include md {
     // Headers
     h1 {
         font-size: 2.5rem;
