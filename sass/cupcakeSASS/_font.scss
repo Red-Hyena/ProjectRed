@@ -21,6 +21,11 @@ p {
     font-weight: 400;
     color: $neutral_900;
 }
+.subtext {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: $neutral_800;
+}
 a {
     font-size: 1rem;
     font-weight: 500;
@@ -70,6 +75,9 @@ input {
     // Text
     p {
         font-size: 1.25rem;
+    }
+    .subtext {
+        font-size: 0.875rem;
     }
     a {
         font-size: 1.125rem;
