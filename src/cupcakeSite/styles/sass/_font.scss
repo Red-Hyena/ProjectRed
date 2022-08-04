@@ -65,7 +65,14 @@ input {
     font-weight: 400;
     color: $neutral_900;
 }
-
+input:focus {
+    color: $black;
+}
+textarea {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $black;
+}
 @include md {
     // Headers
     h1 {

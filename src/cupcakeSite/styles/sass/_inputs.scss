@@ -1,3 +1,4 @@
+// Text Boxes/Areas
 input, textarea {
     width: 248px;
     height: 35px;
@@ -65,4 +66,36 @@ input:disabled, textarea:disabled {
         width: 400px;
         min-height: 250px;
     }
+}
+
+// Radio Buttons
+.radioTest {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 0.125rem solid $neutral_900;
+    border-radius: 50%;
+    transform: translateY(0.175rem);
+    display: grid;
+    place-content: center;    
+}
+input[type="radio"]::before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1rem 1rem $primary_700;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
 }
