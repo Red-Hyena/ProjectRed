@@ -1,0 +1,38 @@
+// Flexbox
+.textTitle {
+    display: inline-block;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+}
+.flexTextLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+}
+.flexIconLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+}
+.flexIconLinks img {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+@include md {
+    .flexTextLinks {
+        width: 30%;
+    }
+    .flexIconLinks img {
+        max-width: 28px;
+        max-height: 28px;
+    }
+}
+
+.navActivePage {
+    border-bottom: 3px solid $primary_1000;
+}
+
