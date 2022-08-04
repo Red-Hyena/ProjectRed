@@ -1,0 +1,32 @@
+input {
+    width: 248px;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid $black;
+    border-radius: 2px;
+}
+input:hover {
+    border: 1px solid $primary_800;
+}
+input:focus {
+    border: 1px solid $primary_700;
+}
+input:required:invalid {
+    background-image: url(/src/cupcakeSite/img/icons/circle-exclamationColour.png);
+    background-position: 220px 5px;
+    background-repeat: no-repeat;
+    border: 1px solid $error_dark;
+}
+input:required:valid {
+    background-image: url(/src/cupcakeSite/img/icons/checkColour.png);
+    background-position: 220px 5px;
+    background-repeat: no-repeat;
+    border: 1px solid $success_default;
+}
+input:required:focus {
+    background-image: none;
+}
+input:disabled {
+    background: $neutral_200;
+    border: 1px solid $neutral_600;
+}
