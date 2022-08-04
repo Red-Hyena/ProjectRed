@@ -6,11 +6,6 @@
   font-family: "Zilla Slab", serif;
 }
 
-body {
-  display: grid;
-  grid-gap: 16px;
-}
-
 h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -44,23 +39,29 @@ p {
 a {
   font-size: 1rem;
   font-weight: 500;
-  color: #033A2D;
-  text-transform: uppercase;
+  color: #292929;
   text-decoration: none;
+}
+
+a:hover {
+  color: #7A004F;
+}
+
+.navActivePage {
+  color: #7A004F;
+  text-decoration: underline solid 3px;
 }
 
 button {
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .cardText {
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 label {
@@ -116,11 +117,17 @@ input {
     font-size: 1.25rem;
   }
 }
-.textTitle {
-  display: inline-block;
-  position: fixed;
-  top: 16px;
-  left: 16px;
+.flexContainerNavbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pageTitle {
+  order: 1;
+  padding: 16px;
 }
 
 .flexTextLinks {
@@ -128,13 +135,15 @@ input {
   flex-direction: row;
   justify-content: space-around;
   width: 100vw;
+  order: 3;
 }
 
 .flexIconLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 30%;
+  width: 30vw;
+  order: 2;
 }
 
 .flexIconLinks img {
@@ -143,14 +152,36 @@ input {
 }
 
 @media (min-width: 720px) {
-  .flexTextLinks {
-    width: 30%;
+  .flexContainerNavbar {
+    justify-content: flex-end;
   }
-  .flexIconLinks img {
-    max-width: 28px;
-    max-height: 28px;
+  .pageTitle {
+    margin-right: auto;
+  }
+  .flexTextLinks {
+    width: 40vw;
+    margin-right: 32px;
+    order: 2;
+  }
+  .flexIconLinks {
+    margin-right: 16px;
+    width: 15vw;
   }
 }
-.navActivePage {
-  border-bottom: 3px solid #033A2D;
+@media (min-width: 960px) {
+  .pageTitle {
+    padding: 32px;
+  }
+  .flexTextLinks {
+    width: 30%;
+    margin-right: 32px;
+    order: 2;
+  }
+  .flexIconLinks {
+    margin-right: 16px;
+    width: 10vw;
+  }
+}
+.flexTextLinks > a {
+  padding: 1rem;
 }

@@ -1,21 +1,28 @@
 // Flexbox
-.textTitle {
-    display: inline-block;
-    position: fixed;
-    top: 16px;
-    left: 16px;
+.flexContainerNavbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.pageTitle {
+    order: 1;
+    padding: 16px;
 }
 .flexTextLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100vw;
+    order: 3;
 }
 .flexIconLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%;
+    width: 30vw;
+    order: 2;
 }
 .flexIconLinks img {
     max-width: 24px;
@@ -23,16 +30,39 @@
 }
 
 @include md {
+    .flexContainerNavbar {
+        justify-content: flex-end;
+    }
+    .pageTitle {
+        margin-right: auto;
+    }
+    .flexTextLinks {
+        width: 40vw;
+        margin-right: 32px;
+        order: 2;
+    }
+    .flexIconLinks {
+        margin-right: 16px;
+        width: 15vw;
+    }
+}
+
+@include lg {
+    .pageTitle {
+        padding: 32px;
+    }
     .flexTextLinks {
         width: 30%;
+        margin-right: 32px;
+        order: 2;
     }
-    .flexIconLinks img {
-        max-width: 28px;
-        max-height: 28px;
+    .flexIconLinks {
+        margin-right: 16px;
+        width: 10vw;
     }
 }
 
-.navActivePage {
-    border-bottom: 3px solid $primary_1000;
+// Style
+.flexTextLinks > a {
+    padding: 1rem;
 }
-
