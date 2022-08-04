@@ -31,19 +31,20 @@
 
 @include md {
     .flexContainerNavbar {
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     .pageTitle {
-        margin-right: auto;
+        order: 3;
     }
     .flexTextLinks {
         width: 40vw;
         margin-right: 32px;
-        order: 2;
+        order: 1;
     }
     .flexIconLinks {
         margin-right: 16px;
         width: 15vw;
+        order: 3;
     }
 }
 
@@ -52,12 +53,11 @@
         padding: 32px;
     }
     .flexTextLinks {
-        width: 30%;
-        margin-right: 32px;
-        order: 2;
+        margin-left: 32px;
+        width: 354px;
     }
     .flexIconLinks {
-        margin-right: 16px;
+        margin-right: 32px;
         width: 10vw;
     }
 }
