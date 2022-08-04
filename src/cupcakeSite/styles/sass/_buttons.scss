@@ -1,0 +1,113 @@
+// Styling
+button {
+    background-color: $primary_900;
+    border: 2px solid $primary_900;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 
+    0px 2px 2px hsl(0, 0%, 0%, .14), 0px 3px 1px hsl(0, 0%, 0%, .14),
+    0px 1px 5px hsl(0, 0%, 0%, .2);
+}
+button:hover {
+    background-color: $primary_800;
+    border-color: $primary_800;
+}
+button:focus {
+    border-color: $primary_800;
+}
+button:disabled {
+    background-color: $neutral_400;
+    border-color: $neutral_600;
+    box-shadow: none;
+}
+button:disabled:hover {
+    background-color: $neutral_400;
+    border-color: $neutral_600;
+}
+button:disabled:focus {
+    background-color: $neutral_400;
+    border-color: $neutral_600;
+}
+.buttonSecondaryColour {
+    background-color: $secondary_900;
+    border: 2px solid $secondary_900;
+    border-radius: 4px;
+    padding: 8px;
+}
+.buttonSecondaryColour:hover {
+    background-color: $secondary_800;
+    border-color: $secondary_800;
+}
+.buttonSecondaryColour:focus {
+    border-color: $secondary_800;
+}
+.buttonLarge {
+    width: 90px;
+    height: 50px;
+}
+
+@include md {
+    button {
+        padding: 12px;
+    }
+    .buttonSecondaryColour {
+        padding: 12px;
+    }
+    .buttonLarge {
+        width: 120px;
+        height: 65px;
+    }
+}
+// Dots to indicate image
+.dotMobileActive {
+    background-color: $primary_1000;
+    width: 12px;
+    height: 20px;
+    border: 50%;
+    border-radius: 8px;
+    display: inline-block;
+}
+.dotMobileInactive {
+    background-color: hsl(166, 90%, 12%, .38);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dotMobileInactiveSml {
+    background-color: hsl(166, 90%, 12%, .38);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+@include md {
+    .dotMobileActive {
+        width: 18px;
+        height: 26px;
+    }
+    .dotMobileInactive {
+        width: 18px;
+        height: 18px;
+    }
+    .dotMobileInactiveSml {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+
+// Flexbox
+.dotMobileContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 32px auto;
+    width: 115px;
+    justify-content: space-around;
+    align-items: center;
+}
+@include md {
+    .dotMobileContainer {
+        width: 125px;
+    }
+}
