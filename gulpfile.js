@@ -3,52 +3,52 @@ const {src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
 function portfolioBuild() {
-    return src('sass/*.scss')
+    return src('src/portfolioMain/styles/sass/*.scss')
     .pipe(sass())
-    .pipe(dest('css'))
+    .pipe(dest('src/portfolioMain/styles/css'))
 };
 
 function portfolioWatch() {
-    watch(['sass/*.scss'], portfolioBuild)
+    watch(['src/portfolioMain/styles/sass/*.scss'], portfolioBuild)
 };
 
 exports.portfolio = series(portfolioBuild, portfolioWatch);
 
 // Care Home 
 function careHomeBuild() {
-    return src('sass/carehomeSASS/*.scss')
+    return src('src/careHomeSite/styles/sass/*.scss')
     .pipe(sass())
-    .pipe(dest('css/carehomeCSS'))
+    .pipe(dest('src/careHomeSite/styles/css'))
 };
 
 function careHomeWatch() {
-    watch(['sass/carehomeSASS/*.scss'], careHomeBuild)
+    watch(['src/careHomeSite/styles/sass/*.scss'], careHomeBuild)
 };
 
 exports.carehome = series(careHomeBuild, careHomeWatch);
 
 // Cupcake Shop
 function cupcakeBuild() {
-    return src('sass/cupcakeSASS/*.scss')
+    return src('src/cupcakeSite/styles/sass/*.scss')
     .pipe(sass())
-    .pipe(dest('css/cupcakeCSS'))
+    .pipe(dest('src/cupcakeSite/styles/css'))
 };
 
 function cupcakeWatch() {
-    watch(['sass/cupcakeSASS/*.scss'], cupcakeBuild)
+    watch(['src/cupcakeSite/styles/sass/*.scss'], cupcakeBuild)
 };
 
 exports.cupcake = series(cupcakeBuild, cupcakeWatch);
 
 // Sportsball FC
 function sportsballBuild() {
-    return src('sass/sportsballSASS/*.scss')
+    return src('src/sportsballSite/styles/sass/*.scss')
     .pipe(sass())
-    .pipe(dest('css/sportsballCSS'))
+    .pipe(dest('src/sportsballSite/styles/css'))
 };
 
 function sportsballWatch() {
-    watch(['sass/sportsballSASS/*.scss'], sportsballBuild)
+    watch(['src/sportsballSite/styles/sass/*.scss'], sportsballBuild)
 };
 
 exports.sportsball = series(sportsballBuild, sportsballWatch);
