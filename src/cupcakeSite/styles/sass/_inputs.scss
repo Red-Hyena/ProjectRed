@@ -1,16 +1,21 @@
-input {
+input, textarea {
     width: 248px;
     height: 35px;
     padding: 8px;
-    border: 1px solid $black;
+    border: 1px solid $neutral_900;
     border-radius: 2px;
+    outline: none;
 }
-input:hover {
+textarea {
+    resize: none;
+}
+input:hover, textarea:hover {
     border: 1px solid $primary_800;
 }
-input:focus {
+input:focus, textarea:focus {
     border: 1px solid $primary_700;
 }
+
 input:required:invalid {
     background-image: url(/src/cupcakeSite/img/icons/circle-exclamationColour.png);
     background-position: 220px 5px;
@@ -25,8 +30,39 @@ input:required:valid {
 }
 input:required:focus {
     background-image: none;
+    border: 1px solid $primary_700;
 }
-input:disabled {
+input:disabled, textarea:disabled {
     background: $neutral_200;
     border: 1px solid $neutral_600;
+}
+
+@include md {
+    input, textarea {
+        width: 400px;
+        padding: 8px;
+        border: 2px solid $neutral_900;
+    }
+    input:hover, textarea:hover {
+        border: 2px solid $primary_800;
+    }
+    input:focus, textarea:focus {
+        border: 2px solid $primary_700;
+    }
+    input:required:invalid {
+        background-position: 360px 6px;
+        border: 2px solid $error_dark;
+    }
+    input:required:valid {
+        background-position: 360px 6px;
+        border: 2px solid $success_default;
+    }
+    input:required:focus {
+        background-image: none;
+        border: 2px solid $primary_700;
+    }
+    textarea {
+        width: 400px;
+        min-height: 250px;
+    }
 }
