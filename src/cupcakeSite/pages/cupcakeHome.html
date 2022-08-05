@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cupcake Shop - Home Page</title>
         <link rel="stylesheet" href="/src/cupcakeSite/styles/css/index.css">
+        <script src="/src/cupcakeSite/js/mobileSlideshow.js" defer></script>    
     </head>
 
     <body>            
@@ -27,20 +28,24 @@
                     </a>
                 </div>
             </nav>
-            <div class="cardContainerDesktop">
-                <div class="cardListDesktop">
-                    <div class="cardVanilla cardMobile">
-                        <p>Vanilla $2.00</p>
-                        <button class="btnSlideshowActive">Customize</button>
-                    </div>
-                    <div class="dotMobileContainer">
-                        <span class="slideshowDot dotActive" onclick="cardVanilla"></span>
-                        <span class="slideshowDot dotInActive" onclick="cardCarrot"></span>
-                        <span class="slideshowDot dotInActive" onclick="cardChocolate"></span>
-                        <span class="slideshowDot dotInActiveSml" onclick="cardStrawberry"></span>
-                        <span class="slideshowDot dotInActiveSml" onclick="cardBlueberry"></span>
+
+            <div class="cardContainerMobile">
+                <div class="slideshowContainer">
+                    <div class="cardListMobile">
+                        <div class="cardMobile cardVanilla">Vanilla £1.00</div>
+                        <div class="cardMobile cardCarrot">Carrot £1.20</div>
+                        <div class="cardMobile cardChocolate">Chocolate £1.20</div>
+                        <div class="cardMobile cardStrawberry">Strawberry £1.50</div>
+                        <div class="cardMobile cardBlueberry">Blueberry £1.50</div>
                     </div>
                 </div>
+            </div>
+            <div class="dotMobileContainer">
+                <span class="slideshowDot dotActive" onclick="cardVanilla"></span>
+                <span class="slideshowDot dotInActive" onclick="cardCarrot"></span>
+                <span class="slideshowDot dotInActive" onclick="cardChocolate"></span>
+                <span class="slideshowDot dotInActiveSml" onclick="cardStrawberry"></span>
+                <span class="slideshowDot dotInActiveSml" onclick="cardBlueberry"></span>
             </div>
     </body>
 </html>
