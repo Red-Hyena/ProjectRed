@@ -1,0 +1,31 @@
+
+.cardMobile {
+    width: 200px;
+    height: 300px;
+    background-image: url(/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 32px auto;
+}
+.dotActive {
+    width: 12px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: $primary_1000;
+}
+.dotInActive {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: hsl(166, 90%, 12%, .38);
+}
+.dotInActiveSml {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: hsl(166, 90%, 12%, .38);
+}

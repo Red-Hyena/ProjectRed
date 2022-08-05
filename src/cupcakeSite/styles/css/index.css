@@ -94,6 +94,11 @@ textarea {
   color: #292929;
 }
 
+.cardMobile > p {
+  font-size: 0.875rem;
+  color: #3D3D3D;
+}
+
 @media (min-width: 720px) {
   h1 {
     font-size: 2.5rem;
@@ -410,16 +415,63 @@ input[type=radio] {
   place-content: center;
 }
 
+input[type=radio]:hover {
+  border-color: #06745A;
+}
+
+input[type=radio]:focus {
+  border-color: #089171;
+}
+
 input[type=radio]::before {
   content: "";
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.7rem;
+  height: 0.7rem;
   border-radius: 50%;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1rem 1rem #089171;
+  box-shadow: inset 1rem 1rem #055744;
+  background-color: CanvasText;
 }
 
 input[type=radio]:checked::before {
   transform: scale(1);
+}
+
+input[type=radio]:checked {
+  border-color: #055744;
+}
+
+.cardMobile {
+  width: 200px;
+  height: 300px;
+  background-image: url(/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 32px auto;
+}
+
+.dotActive {
+  width: 12px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #033A2D;
+}
+
+.dotInActive {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: hsla(166deg, 90%, 12%, 0.38);
+}
+
+.dotInActiveSml {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: hsla(166deg, 90%, 12%, 0.38);
 }

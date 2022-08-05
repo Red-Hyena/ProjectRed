@@ -27,15 +27,20 @@
                     </a>
                 </div>
             </nav>
-            <form>
-                <label class="radioTest">
-                    <input type="radio" name="radio"/>
-                    Radio
-                </label>
-                <label class="radioTest">
-                    <input type="radio" name="radio"/>
-                    Radio Checked
-                </label>
-            </form>
+            <div class="cardContainerDesktop">
+                <div class="cardListDesktop">
+                    <div class="cardVanilla cardMobile">
+                        <p>Vanilla $2.00</p>
+                        <button class="btnSlideshowActive">Customize</button>
+                    </div>
+                    <div class="dotMobileContainer">
+                        <span class="slideshowDot dotActive" onclick="cardVanilla"></span>
+                        <span class="slideshowDot dotInActive" onclick="cardCarrot"></span>
+                        <span class="slideshowDot dotInActive" onclick="cardChocolate"></span>
+                        <span class="slideshowDot dotInActiveSml" onclick="cardStrawberry"></span>
+                        <span class="slideshowDot dotInActiveSml" onclick="cardBlueberry"></span>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>

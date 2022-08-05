@@ -73,6 +73,13 @@ textarea {
     font-weight: 400;
     color: $black;
 }
+
+// Cards
+.cardMobile > p {
+    font-size: 0.875rem;
+    color: $neutral_900;
+}
+
 @include md {
     // Headers
     h1 {

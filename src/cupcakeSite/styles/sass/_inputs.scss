@@ -86,16 +86,26 @@ input[type="radio"] {
     display: grid;
     place-content: center;    
 }
+input[type="radio"]:hover {
+    border-color: $primary_800;
+} 
+input[type="radio"]:focus {
+    border-color: $primary_700;
+}
 input[type="radio"]::before {
     content: "";
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 0.70rem;
+    height: 0.70rem;
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1rem 1rem $primary_700;
+    box-shadow: inset 1rem 1rem $primary_900;
+    background-color: CanvasText; // This helps keep colours even in Windows High Contrast mode
 }
 
 input[type="radio"]:checked::before {
     transform: scale(1);
+}
+input[type="radio"]:checked {
+    border-color: $primary_900;
 }
