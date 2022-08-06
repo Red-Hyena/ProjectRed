@@ -1,28 +1,33 @@
-.cardListMobile {
-    display: flex;
+#mobileCardsContainer {
     width: 100%;
-    align-items: center;
 }
-.cardMobile {
-    min-width: 100%;
-    width: 100%;
+.mobileCard {
+    display: none;
+}
+.mobileCard.mobileCardActive {
+    display: block;
+    width: 200px;
     height: 300px;
-    border-radius: 4px;
+    margin: 32px auto;
+    border-radius: 8px;
+    box-shadow: 
+    0px 8px 10px hsl(0, 0%, 0%, .14),
+    0px 3px 14px hsl(0, 0%, 0%, .12),
+    0px 5px 5px hsl(0, 0%, 0%, .2);
+    overflow: hidden;
+}
+.mobileCardText {
+    width: 200px;
+    background-color: $white;
     text-align: center;
-    padding: 8px;
+    height: 1.25rem;
 }
-.cardVanilla {
-    background-image: url(/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg);
-}
-.cardCarrot {
-    background-image: url(/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg);
-}
-.cardChocolate {
-    background-image: url(/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg);
-}
-.cardStrawberry {
-    background-image: url(/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg);
-}
-.cardBlueberry {
-    background-image: url(/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg);
+
+
+#mobileDotContainer {
+    display: flex;
+    flex: row;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
 }

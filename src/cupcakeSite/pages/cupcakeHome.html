@@ -29,23 +29,35 @@
                 </div>
             </nav>
 
-            <div class="cardContainerMobile">
-                <div class="slideshowContainer">
-                    <div class="cardListMobile">
-                        <div class="cardMobile cardVanilla">Vanilla £1.00</div>
-                        <div class="cardMobile cardCarrot">Carrot £1.20</div>
-                        <div class="cardMobile cardChocolate">Chocolate £1.20</div>
-                        <div class="cardMobile cardStrawberry">Strawberry £1.50</div>
-                        <div class="cardMobile cardBlueberry">Blueberry £1.50</div>
+                <div id="mobileCardsContainer">
+                    <div id="vanillaCard" class="mobileCard mobileCardActive">
+                        <div class="mobileCardText">Vanilla £1.00</div>
+                        <img src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg">
+                    </div>     
+                    <div id="carrotCard" class="mobileCard">
+                        <div class="mobileCardText">Carrot £1.20</div>
+                        <img src="/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg">
+                    </div>               
+                    <div id="chocolateCard" class="mobileCard">
+                        <div class="mobileCardText">Chocolate £1.20</div>
+                        <img src="/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg">
                     </div>
+                    <div id="strawberryCard" class="mobileCard">
+                        <div class="mobileCardText">Strawberry £1.50</div>
+                        <img src="/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg">
+                    </div>               
+                    <div id="blueberryCard" class="mobileCard">
+                        <div class="mobileCardText">Blueberry £1.50</div>
+                        <img src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg">
+                    </div>
+
+                <div id="mobileDotContainer">
+                    <span class="mobileCardDot mobileCardDotActive" onclick="vanillaSwitch"></span>
+                    <span class="mobileCardDot" onclick="carrotSwitch"></span>
+                    <span class="mobileCardDot" onclick="chocolateSwitch"></span>
+                    <span class="mobileCardDot" onclick="strawberrySwitch"></span>
+                    <span class="mobileCardDot" onclick="blueberrySwitch"></span>
                 </div>
-            </div>
-            <div class="dotMobileContainer">
-                <span class="slideshowDot dotActive" onclick="cardVanilla"></span>
-                <span class="slideshowDot dotInActive" onclick="cardCarrot"></span>
-                <span class="slideshowDot dotInActive" onclick="cardChocolate"></span>
-                <span class="slideshowDot dotInActiveSml" onclick="cardStrawberry"></span>
-                <span class="slideshowDot dotInActiveSml" onclick="cardBlueberry"></span>
             </div>
     </body>
 </html>

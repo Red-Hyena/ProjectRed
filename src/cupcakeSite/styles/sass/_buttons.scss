@@ -59,7 +59,7 @@ button:disabled:focus {
     }
 }
 // Dots to indicate image
-.dotMobileActive {
+.mobileCardDot.mobileCardDotActive {
     background-color: $primary_1000;
     width: 12px;
     height: 20px;
@@ -67,13 +67,14 @@ button:disabled:focus {
     border-radius: 8px;
     display: inline-block;
 }
-.dotMobileInactive {
+.mobileCardDot {
     background-color: hsl(166, 90%, 12%, .38);
     width: 12px;
     height: 12px;
     border-radius: 50%;
     display: inline-block;
 }
+/*
 .dotMobileInactiveSml {
     background-color: hsl(166, 90%, 12%, .38);
     width: 8px;
@@ -81,6 +82,7 @@ button:disabled:focus {
     border-radius: 50%;
     display: inline-block;
 }
+*/
 @include md {
     .dotMobileActive {
         width: 18px;
