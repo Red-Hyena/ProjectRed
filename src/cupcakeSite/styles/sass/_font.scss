@@ -8,18 +8,22 @@ h2 {
     font-size: 1rem;
     font-weight: 700;
     color: $black;
+    margin: 32px 24px 8px 24px;
 }
 h3 {
     font-size: 1rem;
     font-weight: 700;
     color: $black;
 }
-
+.home_textArea2 {
+    margin: 90px 24px 0px 24px;
+}
 // Text Base
 p {
     font-size: 1rem;
     font-weight: 400;
     color: $neutral_900;
+    padding: 0px 24px;
 }
 .subtext {
     font-size: 0.75rem;

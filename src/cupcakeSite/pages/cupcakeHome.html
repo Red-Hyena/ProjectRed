@@ -28,71 +28,55 @@
                 </div>
             </nav>
 
+            <h2>We love cupcakes</h2>
+            <p>Here at the Cupcake shop we love all things sweet. With five different 
+                starter cakes and a ton of options, we're sure there's a cake for you!</p>
+            <!-- Image carousel-->
             <div class="carouselMobile">
                 <div class="carousel_trackContainer">
                     <ul class="carousel_track">
                         <li class="carousel_card currentCard">
                             <p class="carousel_text">Vanilla £1.00</p>
-                            <img class="carousel_img" src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg" alt="">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg" alt="A vanilla cupcake">
+                            <button aria-label="vanilla cupcake" id="card_vanillaBtn" class="card_btn">Customise</button>
                         </li>
                         <li class="carousel_card">
-                            <img class="carousel_img" src="/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg" alt="">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg" alt="A carrot cupcake">
                             <p class="carousel_text">Carrot £1.20</p>
+                            <button aria-label="carrot cupcake" id="card_carrotBtn" class="card_btn">Customise</button>
                         </li>
                         <li class="carousel_card">
-                            <img class="carousel_img" src="/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg" alt="">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg" alt="A chocolate cupcake">
                             <p class="carousel_text">Chocolate £1.20</p>
+                            <button aria-label="chocolate cupcake" id="card_chocolateBtn" class="card_btn">Customise</button>
                         </li>
                         <li class="carousel_card">
-                            <img class="carousel_img" src="/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg" alt="">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg" alt="A strawberry cupcake">
                             <p class="carousel_text">Strawberry £1.50</p>
+                            <button aria-label="strawberry cupcake" id="card_strawberryBtn" class="card_btn">Customise</button>
                         </li>
                         <li class="carousel_card">
-                            <img class="carousel_img" src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg" alt="">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg" alt="A blueberry cupcake">
                             <p class="carousel_text">Blueberry £1.50</p>
+                            <button aria-label="blueberry cupcake" id="card_blueberryBtn" class="card_btn">Customise</button>
                         </li>
                     </ul>
                 </div>
                 <div class="carousel_nav">
-                    <button class="carousel_indicator currentCard"></button>
-                    <button class="carousel_indicator"></button>
-                    <button class="carousel_indicator"></button>
-                    <button class="carousel_indicator"></button>
-                    <button class="carousel_indicator"></button>
+                    <button aria-label="show vanilla card" class="carousel_indicator currentCard"></button>
+                    <button aria-label="show carrot card"class="carousel_indicator"></button>
+                    <button aria-label="show chocolate card"class="carousel_indicator"></button>
+                    <button aria-label="show strawberry card"class="carousel_indicator"></button>
+                    <button aria-label="show blueberry card"class="carousel_indicator"></button>
                 </div>
             </div>
-            <script src="/src/cupcakeSite/js/mobileSlideshow.js"></script>   
-            <!--
-                <div id="mobileCardsContainer">
-                    <div id="vanillaCard" class="mobileCard">
-                        <div class="mobileCardText">Vanilla £1.00</div>
-                        <img src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg">
-                    </div>     
-                    <div id="carrotCard" class="mobileCard">
-                        <div class="mobileCardText">Carrot £1.20</div>
-                        <img src="/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg">
-                    </div>               
-                    <div id="chocolateCard" class="mobileCard">
-                        <div class="mobileCardText">Chocolate £1.20</div>
-                        <img src="/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg">
-                    </div>
-                    <div id="strawberryCard" class="mobileCard">
-                        <div class="mobileCardText">Strawberry £1.50</div>
-                        <img src="/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg">
-                    </div>               
-                    <div id="blueberryCard" class="mobileCard">
-                        <div class="mobileCardText">Blueberry £1.50</div>
-                        <img src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg">
-                    </div>
+            <section class="home_textArea2">
+                <h3>How to order</h3>
+                <p>Click the customize button above and you will be taken to a new page.
+                    There you can select from one of the five base cakes and add as many
+                    extras as you would like. Once done hit the purchase button.</p>
+            </section>
 
-                <div id="mobileDotContainer">
-                    <span class="mobileCardDot" onclick="currentCard(1)"></span>
-                    <span class="mobileCardDot" onclick="currentCard(2)"></span>
-                    <span class="mobileCardDot" onclick="currentCard(3)"></span>
-                    <span class="mobileCardDot" onclick="currentCard(4)"></span>
-                    <span class="mobileCardDot" onclick="currentCard(5)"></span>
-                </div>
-            </div>
-        -->
+            <script src="/src/cupcakeSite/js/mobileSlideshow.js"></script>   
     </body>
 </html>

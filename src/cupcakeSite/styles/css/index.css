@@ -18,6 +18,7 @@ h2 {
   font-size: 1rem;
   font-weight: 700;
   color: #292929;
+  margin: 32px 24px 8px 24px;
 }
 
 h3 {
@@ -26,10 +27,15 @@ h3 {
   color: #292929;
 }
 
+.home_textArea2 {
+  margin: 90px 24px 0px 24px;
+}
+
 p {
   font-size: 1rem;
   font-weight: 400;
   color: #3D3D3D;
+  padding: 0px 24px;
 }
 
 .subtext {
@@ -269,60 +275,6 @@ button:disabled:focus {
     height: 65px;
   }
 }
-.mobileCardDot.mobileCardDotActive {
-  background-color: #033A2D;
-  width: 12px;
-  height: 20px;
-  border: 50%;
-  border-radius: 8px;
-  display: inline-block;
-}
-
-.mobileCardDot {
-  background-color: hsla(166deg, 90%, 12%, 0.38);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-/*
-.dotMobileInactiveSml {
-    background-color: hsl(166, 90%, 12%, .38);
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    display: inline-block;
-}
-*/
-@media (min-width: 720px) {
-  .dotMobileActive {
-    width: 18px;
-    height: 26px;
-  }
-  .dotMobileInactive {
-    width: 18px;
-    height: 18px;
-  }
-  .dotMobileInactiveSml {
-    width: 14px;
-    height: 14px;
-  }
-}
-.dotMobileContainer {
-  display: flex;
-  flex-direction: row;
-  margin: 32px auto;
-  width: 115px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-@media (min-width: 720px) {
-  .dotMobileContainer {
-    width: 125px;
-  }
-}
 input, textarea {
   width: 248px;
   height: 35px;
@@ -499,10 +451,10 @@ input[type=radio]:checked {
 }
 
 .carousel_indicator {
-  border: 0;
-  border-radius: 50%;
   width: 10px;
   height: 10px;
+  border: 0;
+  border-radius: 50%;
   background: hsla(166deg, 90%, 12%, 0.38);
 }
 
@@ -511,4 +463,15 @@ input[type=radio]:checked {
   border-radius: 8px;
   width: 12px;
   height: 24px;
+}
+
+.carousel_indicator:focus {
+  background-color: #089171;
+}
+
+.card_btn {
+  position: absolute;
+  top: 260px;
+  left: 55px;
+  padding: 4px 8px;
 }

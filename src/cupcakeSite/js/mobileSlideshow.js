@@ -13,14 +13,13 @@ const setCardPosition = (card, index) => {
 
 // Card positioning functions
 const moveToCard = (track, currentCard, targetCard) => {
-    console.log(track)
     track.style.transform = 'translateX(-' + targetCard.style.left + ')';
-    console.log(currentCard, targetCard)
     currentCard.classList.remove('currentCard');
     targetCard.classList.add('currentCard');
 }
 
 cards.forEach(setCardPosition);
+
 // Pagination
 navDots.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
@@ -37,8 +36,6 @@ const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('currentCard');
     targetDot.classList.add('currentCard');
 }
-
-// Card animation 
 
 // Touch events for swipe
 // Swipe left to move to next card
