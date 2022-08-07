@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cupcake Shop - Home Page</title>
-        <link rel="stylesheet" href="/src/cupcakeSite/styles/css/index.css">
-        <script src="/src/cupcakeSite/js/mobileSlideshow.js" defer></script>    
+        <link rel="stylesheet" href="/src/cupcakeSite/styles/css/index.css"> 
     </head>
 
     <body>            
@@ -29,8 +28,43 @@
                 </div>
             </nav>
 
+            <div class="carouselMobile">
+                <div class="carousel_trackContainer">
+                    <ul class="carousel_track">
+                        <li class="carousel_card currentCard">
+                            <p class="carousel_text">Vanilla £1.00</p>
+                            <img class="carousel_img" src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg" alt="">
+                        </li>
+                        <li class="carousel_card">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg" alt="">
+                            <p class="carousel_text">Carrot £1.20</p>
+                        </li>
+                        <li class="carousel_card">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg" alt="">
+                            <p class="carousel_text">Chocolate £1.20</p>
+                        </li>
+                        <li class="carousel_card">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg" alt="">
+                            <p class="carousel_text">Strawberry £1.50</p>
+                        </li>
+                        <li class="carousel_card">
+                            <img class="carousel_img" src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg" alt="">
+                            <p class="carousel_text">Blueberry £1.50</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel_nav">
+                    <button class="carousel_indicator currentCard"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                </div>
+            </div>
+            <script src="/src/cupcakeSite/js/mobileSlideshow.js"></script>   
+            <!--
                 <div id="mobileCardsContainer">
-                    <div id="vanillaCard" class="mobileCard mobileCardActive">
+                    <div id="vanillaCard" class="mobileCard">
                         <div class="mobileCardText">Vanilla £1.00</div>
                         <img src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg">
                     </div>     
@@ -52,12 +86,13 @@
                     </div>
 
                 <div id="mobileDotContainer">
-                    <span class="mobileCardDot mobileCardDotActive" onclick="vanillaSwitch"></span>
-                    <span class="mobileCardDot" onclick="carrotSwitch"></span>
-                    <span class="mobileCardDot" onclick="chocolateSwitch"></span>
-                    <span class="mobileCardDot" onclick="strawberrySwitch"></span>
-                    <span class="mobileCardDot" onclick="blueberrySwitch"></span>
+                    <span class="mobileCardDot" onclick="currentCard(1)"></span>
+                    <span class="mobileCardDot" onclick="currentCard(2)"></span>
+                    <span class="mobileCardDot" onclick="currentCard(3)"></span>
+                    <span class="mobileCardDot" onclick="currentCard(4)"></span>
+                    <span class="mobileCardDot" onclick="currentCard(5)"></span>
                 </div>
             </div>
+        -->
     </body>
 </html>

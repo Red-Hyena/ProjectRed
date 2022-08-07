@@ -443,35 +443,72 @@ input[type=radio]:checked {
   border-color: #055744;
 }
 
-#mobileCardsContainer {
+.carouselMobile {
+  position: relative;
   width: 100%;
-}
-
-.mobileCard {
-  display: none;
-}
-
-.mobileCard.mobileCardActive {
-  display: block;
-  width: 200px;
   height: 300px;
   margin: 32px auto;
-  border-radius: 8px;
-  box-shadow: 0px 8px 10px hsla(0deg, 0%, 0%, 0.14), 0px 3px 14px hsla(0deg, 0%, 0%, 0.12), 0px 5px 5px hsla(0deg, 0%, 0%, 0.2);
-  overflow: hidden;
 }
 
-.mobileCardText {
+.carousel_trackContainer {
   width: 200px;
+  height: 100%;
+  margin: 32px auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 8px 10px hsla(0deg, 0%, 0%, 0.14), 0px 3px 14px hsla(0deg, 0%, 0%, 0.12), 0px 5px 5px hsla(0deg, 0%, 0%, 0.2);
+  border-radius: 4px;
+}
+
+.carousel_track {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in-out;
+}
+
+.carousel_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.carousel_img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px;
   background-color: #ffffff;
   text-align: center;
-  height: 1.25rem;
 }
 
-#mobileDotContainer {
+.carousel_nav {
   display: flex;
-  flex: row;
-  column-gap: 16px;
-  justify-content: center;
+  width: 50%;
+  margin: 16px auto;
+  justify-content: space-around;
   align-items: center;
+}
+
+.carousel_indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: hsla(166deg, 90%, 12%, 0.38);
+}
+
+.carousel_indicator.currentCard {
+  background: #033A2D;
+  border-radius: 8px;
+  width: 12px;
+  height: 24px;
 }

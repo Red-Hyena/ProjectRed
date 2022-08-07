@@ -1,33 +1,101 @@
-const dotContainer = document.getElementById('mobileDotContainer');
-const cardContainer = document.getElementById('mobileCardsContainer');
+const carousel = document.querySelector('.carouselMobile');
+const track = document.querySelector('.carousel_track');
+const cards = Array.from(track.children);
+const navDots = document.querySelector('.carousel_nav');
+const dots = Array.from(navDots.children);
 
-const dots = dotContainer.getElementsByClassName('mobileCardDot');
-const cards = cardContainer.getElementsByClassName('mobileCard');
+// Display cards next to each other
+const cardWidth = cards[0].getBoundingClientRect().width;
 
-const vanillaCard = document.getElementById('vanillaCard');
-const carrotCard = document.getElementById('carrotCard');
-const chocolateCard = document.getElementById('chocolateCard');
-const strawberryCard = document.getElementById('strawberryCard');
-const blueberryCard = document.getElementById('blueberryCard');
-/*
-for (i = 0; i < dots.length; i++) {
-    dots[i].addEventListener('click', function() {
-        var currentDot = document.getElementsByClassName('cardDotActive');
-        currentDot[0].className = currentDot[0].className.replace(' cardDotActive', '');
-        this.className += ' cardDotActive';
-    });
-}
-*/
+const setCardPosition = (card, index) => {
+    card.style.left = cardWidth * index + 'px';
+};
 
-
-for (dotPosition = 0; dotPosition < dots.length; dotPosition++) {
-    dots[dotPosition].addEventListener('click', function() {
-        var currentDot = document.getElementsByClassName('mobileCardDotActive');
-        currentDot[0].className = currentDot[0].className.replace(' mobileCardDotActive', '');
-        this.className += ' mobileCardDotActive';
-    })
+// Card positioning functions
+const moveToCard = (track, currentCard, targetCard) => {
+    console.log(track)
+    track.style.transform = 'translateX(-' + targetCard.style.left + ')';
+    console.log(currentCard, targetCard)
+    currentCard.classList.remove('currentCard');
+    targetCard.classList.add('currentCard');
 }
 
-function vanillaSwitch() {
-    vanillaCard.className.replace(' mobileCardActive', '');
+cards.forEach(setCardPosition);
+// Pagination
+navDots.addEventListener('click', e => {
+    const targetDot = e.target.closest('button');
+    if(!targetDot) return;
+    const currentCard = track.querySelector('.currentCard');
+    const currentDot = navDots.querySelector('.currentCard');
+    const targetIndex = dots.findIndex(dot => dot === targetDot);
+    const targetCard = cards[targetIndex];
+
+    moveToCard(track, currentCard, targetCard);
+    updateDots(currentDot, targetDot);
+})
+const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove('currentCard');
+    targetDot.classList.add('currentCard');
 }
+
+// Card animation 
+
+// Touch events for swipe
+// Swipe left to move to next card
+function swipeLeft() {
+    const currentCard = track.querySelector('.currentCard');
+    const nextCard = currentCard.nextElementSibling;
+    const currentDot = navDots.querySelector('.currentCard');
+    const nextDot = currentDot.nextElementSibling;
+    moveToCard(track, currentCard, nextCard);
+    updateDots(currentDot, nextDot);
+}
+// Swipe to move to previous card
+function swipeRight() {
+    const currentCard = track.querySelector('.currentCard');
+    const prevCard = currentCard.previousElementSibling;
+    const currentDot = navDots.querySelector('.currentCard');
+    const prevDot = currentDot.previousElementSibling;
+    moveToCard(track, currentCard, prevCard);
+    updateDots(currentDot, prevDot);
+}
+
+// Touch 
+// Variables required
+var startX,
+startY,
+distX,
+distY,
+thresholdX = 100,
+thresholdY = 100,
+allowedTime = 100,
+elapsedTime,
+startTime
+
+carousel.addEventListener('touchstart', e => {
+    var touchobj = e.changedTouches[0]
+    dist = 0
+    startX = touchobj.pageX
+    startY = touchobj.pageY
+    startTime = new Date().getTime()
+})
+// carousel.addEventListener('touchmove', e => {
+// })
+carousel.addEventListener('touchend', e => {
+    var touchobj = e.changedTouches[0]
+    distX = touchobj.pageX - startX
+    distY = touchobj.pageY - startY
+    elapsedTime = new Date().getTime() - startTime
+    if (elapsedTime >= allowedTime) {
+        if (Math.abs(distX) >= thresholdX && Math.abs(distY) <= thresholdY) {
+            // ^ Calculates X & Y axis distance to prevent diagonal swipe
+            swipedir = (distX < 0)? 'left' : 'right'
+            if (swipedir === 'left') {
+                swipeLeft();
+            } else {
+                swipeRight();
+            }
+        }
+    }
+})
+
