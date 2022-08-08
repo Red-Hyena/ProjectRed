@@ -8,22 +8,21 @@ h2 {
     font-size: 1rem;
     font-weight: 700;
     color: $black;
-    margin: 32px 24px 8px 24px;
+    padding: 4px;
 }
 h3 {
     font-size: 1rem;
     font-weight: 700;
     color: $black;
+    padding: 4px;
 }
-.home_textArea2 {
-    margin: 90px 24px 0px 24px;
-}
+
 // Text Base
 p {
     font-size: 1rem;
     font-weight: 400;
     color: $neutral_900;
-    padding: 0px 24px;
+    padding: 4px;
 }
 .subtext {
     font-size: 0.75rem;
@@ -39,9 +38,14 @@ a {
 a:hover {
     color: $secondary_800;
 }
+
 .navActivePage {
     color: $secondary_800;
     text-decoration: underline solid 3px;
+}
+.text_group {
+    width: 25rem;
+    margin: 32px auto;
 }
 // Buttons & Inputs Base
 button {
@@ -49,7 +53,7 @@ button {
     font-weight: 500;
     color: $white;
 }
-.cardText {
+.card_text {
     font-size: 0.875rem;
     font-weight: 500;
     color: $white;
@@ -104,6 +108,10 @@ textarea {
     }
     a {
         font-size: 1.125rem;
+    }
+    .text_group {
+        width: 45rem;
+        margin: 64px auto;
     }
     // Buttons & Inputs
     button {

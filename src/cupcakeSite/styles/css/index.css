@@ -18,24 +18,21 @@ h2 {
   font-size: 1rem;
   font-weight: 700;
   color: #292929;
-  margin: 32px 24px 8px 24px;
+  padding: 4px;
 }
 
 h3 {
   font-size: 1rem;
   font-weight: 700;
   color: #292929;
-}
-
-.home_textArea2 {
-  margin: 90px 24px 0px 24px;
+  padding: 4px;
 }
 
 p {
   font-size: 1rem;
   font-weight: 400;
   color: #3D3D3D;
-  padding: 0px 24px;
+  padding: 4px;
 }
 
 .subtext {
@@ -60,13 +57,18 @@ a:hover {
   text-decoration: underline solid 3px;
 }
 
+.text_group {
+  width: 25rem;
+  margin: 32px auto;
+}
+
 button {
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
 }
 
-.cardText {
+.card_text {
   font-size: 0.875rem;
   font-weight: 500;
   color: #ffffff;
@@ -124,6 +126,10 @@ textarea {
   a {
     font-size: 1.125rem;
   }
+  .text_group {
+    width: 45rem;
+    margin: 64px auto;
+  }
   button {
     font-size: 1.125rem;
   }
@@ -146,6 +152,7 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .pageTitle {
@@ -265,10 +272,10 @@ button:disabled:focus {
 
 @media (min-width: 720px) {
   button {
-    padding: 12px;
+    padding: 8px;
   }
   .buttonSecondaryColour {
-    padding: 12px;
+    padding: 8px;
   }
   .buttonLarge {
     width: 120px;
@@ -285,6 +292,7 @@ input, textarea {
 }
 
 textarea {
+  height: 10rem;
   resize: none;
 }
 
@@ -395,83 +403,66 @@ input[type=radio]:checked {
   border-color: #055744;
 }
 
-.carouselMobile {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  margin: 32px auto;
+.cupcake_gallery {
+  display: flex;
+  flex-direction: row;
+  row-gap: 16px;
+  flex-wrap: wrap;
 }
 
-.carousel_trackContainer {
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
-  height: 100%;
-  margin: 32px auto;
-  position: relative;
-  overflow: hidden;
+  height: 300px;
+  margin: 16px auto;
   box-shadow: 0px 8px 10px hsla(0deg, 0%, 0%, 0.14), 0px 3px 14px hsla(0deg, 0%, 0%, 0.12), 0px 5px 5px hsla(0deg, 0%, 0%, 0.2);
   border-radius: 4px;
 }
 
-.carousel_track {
-  list-style: none;
-  position: relative;
-  height: 100%;
-  transition: transform 250ms ease-in-out;
-}
-
-.carousel_card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-}
-
-.carousel_img {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.carousel_text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 4px;
-  background-color: #ffffff;
+.card_text {
   text-align: center;
+  padding: 4px;
 }
 
-.carousel_nav {
-  display: flex;
-  width: 50%;
-  margin: 16px auto;
-  justify-content: space-around;
-  align-items: center;
+.card_img {
+  width: 5px;
+  height: 5px;
+  opacity: 0;
 }
 
-.carousel_indicator {
-  width: 10px;
-  height: 10px;
-  border: 0;
-  border-radius: 50%;
-  background: hsla(166deg, 90%, 12%, 0.38);
+#card_vanilla {
+  background-image: url(/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg);
+}
+#card_vanilla .card_text {
+  color: #292929;
 }
 
-.carousel_indicator.currentCard {
-  background: #033A2D;
-  border-radius: 8px;
-  width: 12px;
-  height: 24px;
+#card_carrot {
+  background-image: url(/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg);
+}
+#card_carrot .card_text {
+  color: #ffffff;
 }
 
-.carousel_indicator:focus {
-  background-color: #089171;
+#card_chocolate {
+  background-image: url(/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg);
+}
+#card_chocolate .card_text {
+  color: #ffffff;
 }
 
-.card_btn {
-  position: absolute;
-  top: 260px;
-  left: 55px;
-  padding: 4px 8px;
+#card_strawberry {
+  background-image: url(/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg);
+}
+#card_strawberry .card_text {
+  color: #292929;
+}
+
+#card_blueberry {
+  background-image: url(/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg);
+}
+#card_blueberry .card_text {
+  color: #292929;
 }
