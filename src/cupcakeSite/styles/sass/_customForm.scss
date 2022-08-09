@@ -1,0 +1,44 @@
+.activeFormFlex {
+    display: block;
+    margin: 32px 10%;
+}
+.inactiveFormFlex {
+    display: none;
+}
+.activeFormFlex form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.activeFormFlex {
+    form {
+        div {
+            display: flex;
+            flex: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            background-color: hsl(0, 0%, 80%, .30);
+            border-radius: 4px;
+
+            label {
+                text-align: end;
+            }
+        }
+    }
+}
+.twoBtnSwitchFlex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 32px;
+    justify-content: space-around;
+    background-color: none;
+}
+.totalCostFlex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

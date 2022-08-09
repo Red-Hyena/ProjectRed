@@ -8,14 +8,44 @@ button {
     0px 2px 2px hsl(0, 0%, 0%, .14), 0px 3px 1px hsl(0, 0%, 0%, .14),
     0px 1px 5px hsl(0, 0%, 0%, .2);
 }
+.formSwitchBtn {
+    width: 90px;
+    height: 50px;
+}
+.leftBtn {
+    width: 90px;
+    height: 50px;
+}
+.totalCostBtn {
+    width: 90px;
+    height: 70px;
+    background-color: $secondary_900;
+    border: 2px solid $secondary_900;
+    box-shadow: 
+    0px 2px 2px hsl(0, 0%, 0%, .14), 0px 3px 1px hsl(0, 0%, 0%, .14),
+    0px 1px 5px hsl(0, 0%, 0%, .2);
+}
 button:hover {
     background-color: $primary_800;
     border-color: $primary_800;
 }
+.totalCostBtn:hover {
+    background-color: $secondary_800;
+    border-color: $secondary_800;
+}
 button:focus {
-    border-color: $primary_800;
+    border-color: $primary_700;
+}
+.totalCostBtn:focus {
+    background-color: $secondary_800;
+    border-color: $secondary_800;
 }
 button:disabled {
+    background-color: $neutral_400;
+    border-color: $neutral_600;
+    box-shadow: none;
+}
+.totalCostBtn:disabled {
     background-color: $neutral_400;
     border-color: $neutral_600;
     box-shadow: none;
@@ -56,5 +86,14 @@ button:disabled:focus {
     .buttonLarge {
         width: 120px;
         height: 65px;
+    }
+    .totalCostBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 125px;
+        min-height: 75px;
+        padding: 12px;
     }
 }

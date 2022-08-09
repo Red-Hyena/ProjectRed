@@ -108,6 +108,10 @@ textarea {
   color: #292929;
 }
 
+.totalCostText {
+  color: #ffffff;
+}
+
 .cardMobile > p {
   font-size: 0.875rem;
   color: #3D3D3D;
@@ -230,16 +234,50 @@ button {
   box-shadow: 0px 2px 2px hsla(0deg, 0%, 0%, 0.14), 0px 3px 1px hsla(0deg, 0%, 0%, 0.14), 0px 1px 5px hsla(0deg, 0%, 0%, 0.2);
 }
 
+.formSwitchBtn {
+  width: 90px;
+  height: 50px;
+}
+
+.leftBtn {
+  width: 90px;
+  height: 50px;
+}
+
+.totalCostBtn {
+  width: 90px;
+  height: 70px;
+  background-color: #5C003B;
+  border: 2px solid #5C003B;
+  box-shadow: 0px 2px 2px hsla(0deg, 0%, 0%, 0.14), 0px 3px 1px hsla(0deg, 0%, 0%, 0.14), 0px 1px 5px hsla(0deg, 0%, 0%, 0.2);
+}
+
 button:hover {
   background-color: #06745A;
   border-color: #06745A;
 }
 
+.totalCostBtn:hover {
+  background-color: #7A004F;
+  border-color: #7A004F;
+}
+
 button:focus {
-  border-color: #06745A;
+  border-color: #089171;
+}
+
+.totalCostBtn:focus {
+  background-color: #7A004F;
+  border-color: #7A004F;
 }
 
 button:disabled {
+  background-color: #A3A3A3;
+  border-color: #7A7A7A;
+  box-shadow: none;
+}
+
+.totalCostBtn:disabled {
   background-color: #A3A3A3;
   border-color: #7A7A7A;
   box-shadow: none;
@@ -286,6 +324,15 @@ button:disabled:focus {
   .buttonLarge {
     width: 120px;
     height: 65px;
+  }
+  .totalCostBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 125px;
+    min-height: 75px;
+    padding: 12px;
   }
 }
 input, textarea {
@@ -515,4 +562,48 @@ input[type=radio]:checked {
 .submit_btn {
   width: 61px;
   margin: 0 auto;
+}
+
+.activeFormFlex {
+  display: block;
+  margin: 32px 10%;
+}
+
+.inactiveFormFlex {
+  display: none;
+}
+
+.activeFormFlex form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.activeFormFlex form div {
+  display: flex;
+  flex: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: hsla(0deg, 0%, 80%, 0.3);
+  border-radius: 4px;
+}
+.activeFormFlex form div label {
+  text-align: end;
+}
+
+.twoBtnSwitchFlex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 32px;
+  justify-content: space-around;
+  background-color: none;
+}
+
+.totalCostFlex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }

@@ -1,6 +1,7 @@
 // Portfolio (Main)
 const {src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
 
 function portfolioBuild() {
     return src('src/portfolioMain/styles/sass/*.scss')
@@ -52,3 +53,14 @@ function sportsballWatch() {
 };
 
 exports.sportsball = series(sportsballBuild, sportsballWatch);
+
+// Cupcake JS Concat
+const jsBundle = () => 
+    src(['src/cupcakeSite/js/transitionScript.js',
+        'src/cupcakeSite/js/costUpdateScript.js',
+        'src/cupcakeSite/js/textIcingScript.js'    
+])
+.pipe(concat('concatScript.js'))
+.pipe(dest('src/cupcakeSite/js'));
+
+exports.jsBundle = jsBundle;

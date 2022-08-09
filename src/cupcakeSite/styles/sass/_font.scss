@@ -81,7 +81,9 @@ textarea {
     font-weight: 400;
     color: $black;
 }
-
+.totalCostText {
+    color: $white;
+}
 // Cards
 .cardMobile > p {
     font-size: 0.875rem;
