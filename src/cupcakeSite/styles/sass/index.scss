@@ -8,6 +8,11 @@
     padding: 0px;
     font-family: 'Zilla Slab', serif;
 }
+html {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
 // Imports
 @import 'breakpoints.scss';
@@ -19,3 +24,4 @@
 @import '_buttons.scss';
 @import '_inputs.scss';
 @import '_cards.scss';
+@import '_forms.scss';

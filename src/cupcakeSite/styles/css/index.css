@@ -8,6 +8,12 @@
   font-family: "Zilla Slab", serif;
 }
 
+html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -58,7 +64,7 @@ a:hover {
 }
 
 .text_group {
-  width: 25rem;
+  width: 300px;
   margin: 32px auto;
 }
 
@@ -465,4 +471,48 @@ input[type=radio]:checked {
 }
 #card_blueberry .card_text {
   color: #292929;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.name_flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.name_flex label {
+  width: 60px;
+}
+
+.email_flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.email_flex label {
+  width: 60px;
+}
+
+.comment_flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.comment_flex label {
+  width: 60px;
+}
+
+.submit_btn {
+  width: 61px;
+  margin: 0 auto;
 }

@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cupcake Shop - Home Page</title>
         <link rel="stylesheet" href="/src/cupcakeSite/styles/css/index.css">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="/src/cupcakeSite/styles/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/src/cupcakeSite/styles/css/owl.theme.default.min.css">
     </head>
 
     <body>            
@@ -34,7 +36,33 @@
                 <p>Here at the Cupcake shop we love all things sweet. With five different
                     starter cakes and a ton of options, we're sure there's a cake for you!</p>
             </section>
-            <!-- Image carousel-->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="item" src="/src/cupcakeSite/img/vanillaCupcakeEdit-min.jpg" alt="A vanilla cupcake">
+                    <button>Vanilla £1.00</button>
+                </div>
+                <div class="item">
+                    <img class="item" src="/src/cupcakeSite/img/carrotCupcakeEdit-min.jpg" alt="A carrot cupcake">
+                    <button>Carrot £1.00</button>
+                </div>
+                <div class="item">
+                    <img class="item" src="/src/cupcakeSite/img/chocolateCupcakeEdit-min.jpg" alt="A chocolate cupcake">
+                    <button>Chocolate £1.00</button>
+                </div>
+                <div class="item">
+                    <img class="item" src="/src/cupcakeSite/img/strawberryCupcakeEdit-min.jpg" alt="A strawberry cupcake">
+                    <button>Strawberry £1.00</button>
+                </div>
+                <div class="item">
+                    <img class="item" src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg" alt="A blueberry cupcake">
+                    <button>Blueberry £1.00</button>
+                </div>
+                
+                
+                
+                
+            </div>
+            <!-- Image carousel
                     <ul class="cupcake_gallery" id="cupcake_gallery">
                         <li class="card" id="card_vanilla">
                             <p class="card_text">Vanilla £1.00</p>
@@ -61,7 +89,7 @@
                             <img class="card_img" src="/src/cupcakeSite/img/blueberryCupcakeEdit-min.jpg" alt="A blueberry cupcake">
                             <button aria-label="blueberry cupcake" id="card_blueberryBtn" class="card_btn">Customise</button>
                         </li>
-                    </ul>
+                    </ul> -->
 
             <section class="text_group">
                 <h3>How to order</h3>
@@ -69,5 +97,8 @@
                     There you can select from one of the five base cakes and add as many
                     extras as you would like. Once done hit the purchase button.</p>
             </section>
+
+            <script src="/src/cupcakeSite/js/owl.carousel.min.js"></script>
+            <script src="/src/cupcakeSite/js/owlCarouselInit.js"></script>
     </body>
 </html>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cupcake Shop - Contact</title>
         <link rel="stylesheet" href="/src/cupcakeSite/styles/css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
 
     <body>
@@ -33,14 +34,21 @@
             <p>We love to hear from our customers, if you have a suggestion or just
                 want to tell us about your experience fill out the form below.</p>
         </section>
-        <form class="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="comment">Leave a comment:</label>
-            <textarea name="comment" placeholder="Enter comment"></textarea>
-            <button>Submit</button>
+        
+        <form class="contact_form">
+            <div class="name_flex">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name">
+            </div>
+            <div class="email_flex">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="comment_flex">
+                <label for="comment">Comment:</label>
+                <textarea name="comment" placeholder="Enter comment"></textarea>
+            </div>
+            <button class="submit_btn">Submit</button>
         </form>
     </body>
 </html>

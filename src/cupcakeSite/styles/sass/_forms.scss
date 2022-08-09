@@ -1,0 +1,39 @@
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.name_flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    label {
+        width: 60px;
+    }
+}
+.email_flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    label {
+        width: 60px;
+    }
+}
+.comment_flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    label {
+        width: 60px;
+    }
+}
+.submit_btn {
+    width: 61px;
+    margin: 0 auto;
+}
