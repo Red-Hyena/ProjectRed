@@ -68,7 +68,33 @@ input:disabled, textarea:disabled {
         min-height: 250px;
     }
 }
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    
+    div {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 32px;
 
+        label {
+            text-align: end;
+        }
+    }
+}
+@include md {
+    .contact_form {        
+        div {
+
+            column-gap: 64px;
+        }
+        #submit_btn {
+            width: 175px;
+        }
+    }
+}
 // Radio Buttons
 .radioTest {
     display: grid;

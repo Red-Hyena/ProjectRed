@@ -37,8 +37,14 @@
     justify-content: space-around;
     background-color: none;
 }
-.totalCostFlex {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+
+@include md {
+    .activeFormFlex {
+        margin: 64px 15%;
+    }
+}
+@include lg {
+    .activeFormFlex {
+        margin: 64px 20%;
+    }
 }

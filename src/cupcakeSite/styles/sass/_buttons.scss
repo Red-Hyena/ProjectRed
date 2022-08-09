@@ -16,14 +16,26 @@ button {
     width: 90px;
     height: 50px;
 }
+
+.textExtraConfirm {
+    width: 100px;
+}
 .totalCostBtn {
-    width: 90px;
-    height: 70px;
-    background-color: $secondary_900;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 32px auto;
     border: 2px solid $secondary_900;
+    border-radius: 4px;
+    background-color: $secondary_900;
     box-shadow: 
     0px 2px 2px hsl(0, 0%, 0%, .14), 0px 3px 1px hsl(0, 0%, 0%, .14),
     0px 1px 5px hsl(0, 0%, 0%, .2);
+}
+.submit_btn {
+    width: 500px;
 }
 button:hover {
     background-color: $primary_800;
@@ -89,7 +101,7 @@ button:disabled:focus {
     }
     .totalCostBtn {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         min-width: 125px;

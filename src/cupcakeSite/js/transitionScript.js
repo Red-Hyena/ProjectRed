@@ -14,7 +14,6 @@ cakeToFlavour.addEventListener('click', () => {
     } else {
         return;
     }
-    
 });
 var flavourToCake = document.querySelector('.flavourToCake');
 flavourToCake.addEventListener('click', () => {

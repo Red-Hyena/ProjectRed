@@ -112,6 +112,10 @@ textarea {
   color: #ffffff;
 }
 
+.purchaseBtn {
+  color: #ffffff;
+}
+
 .cardMobile > p {
   font-size: 0.875rem;
   color: #3D3D3D;
@@ -244,12 +248,25 @@ button {
   height: 50px;
 }
 
+.textExtraConfirm {
+  width: 100px;
+}
+
 .totalCostBtn {
-  width: 90px;
-  height: 70px;
-  background-color: #5C003B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 32px auto;
   border: 2px solid #5C003B;
+  border-radius: 4px;
+  background-color: #5C003B;
   box-shadow: 0px 2px 2px hsla(0deg, 0%, 0%, 0.14), 0px 3px 1px hsla(0deg, 0%, 0%, 0.14), 0px 1px 5px hsla(0deg, 0%, 0%, 0.2);
+}
+
+.submit_btn {
+  width: 500px;
 }
 
 button:hover {
@@ -327,7 +344,7 @@ button:disabled:focus {
   }
   .totalCostBtn {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     min-width: 125px;
@@ -408,6 +425,29 @@ input:disabled, textarea:disabled {
   textarea {
     width: 400px;
     min-height: 250px;
+  }
+}
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.contact_form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 32px;
+}
+.contact_form div label {
+  text-align: end;
+}
+
+@media (min-width: 720px) {
+  .contact_form div {
+    column-gap: 64px;
+  }
+  .contact_form #submit_btn {
+    width: 175px;
   }
 }
 .radioTest {
@@ -602,8 +642,13 @@ input[type=radio]:checked {
   background-color: none;
 }
 
-.totalCostFlex {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+@media (min-width: 720px) {
+  .activeFormFlex {
+    margin: 64px 15%;
+  }
+}
+@media (min-width: 960px) {
+  .activeFormFlex {
+    margin: 64px 20%;
+  }
 }
