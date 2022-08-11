@@ -34,9 +34,7 @@ button {
     0px 2px 2px hsl(0, 0%, 0%, .14), 0px 3px 1px hsl(0, 0%, 0%, .14),
     0px 1px 5px hsl(0, 0%, 0%, .2);
 }
-.submit_btn {
-    width: 500px;
-}
+
 button:hover {
     background-color: $primary_800;
     border-color: $primary_800;
