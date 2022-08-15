@@ -1,0 +1,79 @@
+#fixtureSection {
+    margin: 32px;
+}
+.resultContainer {
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+.teamsFlex {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.homeTeamContainer {
+    display: flex;
+    flex-direction: column;
+}
+.awayTeamContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameInfoFlex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.teamImg {
+    margin: 16px 0px;
+}
+.teamName {
+    margin: 8px 0px;
+    text-align: center;
+}
+.teamScore {
+    margin: 16px 0px;
+    text-align: center;
+}
+.teamScorers {
+}
+.scorer {
+    padding: 4px;
+}
+
+// Buttons
+.btnFlex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+// Images
+.homePageImg {
+    width: 100vw;
+    height: 335px;
+    object-fit: cover;
+}
+
+.homePageExplainer {
+    margin: 32px auto;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+@include lg {
+    .homePageImg {
+        height: 600px;
+    }
+    .homePageExplainer {
+        width: 40%;
+        min-height: 400px;
+        padding: 32px;
+    }
+}

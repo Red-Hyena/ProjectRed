@@ -1,0 +1,66 @@
+.gameInfoGround {
+    font-size: 1.125rem;
+}
+.gameInfoDate {
+    font-size: 0.875rem;
+}
+.teamName {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.teamScore {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.scorer {
+    font-size: 0.875rem;
+}
+a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: 500;
+}
+.navTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #292929;
+    text-align: center;
+    margin: 8px;
+}
+.activeLink {
+    text-decoration: underline;
+}
+.homePageExplainer p {
+    margin: 8px 0;
+}
+@include lg {
+    .gameInfoGround {
+        font-size: 1.25rem;
+    }
+    .gameInfoDate {
+        font-size: 1rem;
+    }
+    .teamName {
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+    .teamScore {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .scorer {
+        font-size: 1rem;
+    }
+    a {
+        font-size: 1.125rem;
+    }
+}
