@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+/*  0.75rem = 12px, 0.875rem = 14px, 1rem = 16px,
+    1.125rem = 18px, 1.25rem = 20px 1.5rem = 24px,
+    1.75rem = 28px, 2rem = 32px
+*/
+h1 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pictureContainer {
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+}
+
+.pictureContainer img {
+  object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  background-color: #1F2652;
+}
+
+.menuBar1, .menuBar2, .menuBar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0px;
+  transition: 0.25s;
+}
+
+.change .menuBar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .menuBar2 {
+  opacity: 0;
+}
+
+.change .menuBar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}

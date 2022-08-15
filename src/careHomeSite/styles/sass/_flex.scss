@@ -1,0 +1,8 @@
+.pictureContainer {
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+}
+.pictureContainer img {
+    object-fit: cover;
+}
