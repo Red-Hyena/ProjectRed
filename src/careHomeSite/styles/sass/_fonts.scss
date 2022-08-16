@@ -8,6 +8,14 @@ h1 {
     color: $white;
 }
 
+.content {
+    h2 {
+        color: $black;
+        border: none;    
+    }
+}
+
+
 @include xl {
     h1 {
         font-size: 1.5rem;
