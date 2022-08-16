@@ -1,4 +1,4 @@
-.navbar {
+.navbarTop {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -6,22 +6,108 @@
     align-items: center;
     background-color: $primary;
 }
-.menuBar1, .menuBar2, .menuBar3 {
-    width: 35px;
-    height: 5px;
-    background-color: $white;
-    margin: 6px 0px;
-    transition: 0.25s;
+
+// Menu button & transform
+@include wildCard {
+    #navbarMenuBtn {
+        background-color: hsl(0, 0%, 0%, .0);
+        border: none;
+    }
+    .menuBar1, .menuBar2, .menuBar3 {
+        width: 35px;
+        height: 5px;
+        background-color: $white;
+        margin: 6px 0px;
+        transition: 0.25s;
+    }
+
+    .closeBtn.menuBar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .closeBtn.menuBar2 {
+        opacity: 0;
+    }
+    .closeBtn.menuBar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+// Full screen nav for mobiles
+@include wildCard {
+    .navbarLinksContainer {
+        height: 16rem;
+        width: 0%;
+        position: fixed;
+        left: 0;
+        top: 71px;
+        z-index: 1;
+        background-color: hsl(232, 45%, 22%, .95);
+        overflow-x: hidden;
+        transition: .5s;
+    }
+    .navbarLinks {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+
+        a {
+            display: block;
+            padding: 16px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: $white;
+            transition: .25s;
+        }
+        a:hover, a:focus {
+            color: aliceblue;
+        }
+    }
 }
 
-.change .menuBar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+// Menu for over 720px
+@include md {
+    #navbarMenuBtn {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $primary;
+    }
+    .navbarTop {
+        width: 30%;
+    }
+    .navbarLinksContainer {
+        width: 100%;
+    }
+    .navbarLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 32px;
+        padding: 32px;
+
+        a {
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: $white;
+        }
+    }
 }
-.change .menuBar2 {
-    opacity: 0;
-}
-.change .menuBar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+@include xl {
+    .navbarLinks {
+        column-gap: 96px;
+        padding: 32px 96px;
+
+        a {
+            font-size: 1.125rem;
+        }
+    }
 }

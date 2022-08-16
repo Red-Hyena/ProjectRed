@@ -33,8 +33,8 @@ $breakpoints: (
 }
 
 // Wild Card to be used for custom breakpoint
-@mixin wildCard($wc: 0) {
-    @media (min-width: $wc) {
+@mixin wildCard($wc: 720px) {
+    @media (max-width: $wc) {
         @content;
     }
 }

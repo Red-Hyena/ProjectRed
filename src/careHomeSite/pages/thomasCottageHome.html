@@ -10,15 +10,20 @@
 </head>
 <body>
     <nav class="navbar">
-        <h1>Thomas Cottage</h1>
-        <div class="navbarLinks">
-            <div class="navBarMenuBtn" onclick="animateMenuBtn(this)">
-                <div class="menuBar1"></div>
-                <div class="menuBar2"></div>
-                <div class="menuBar3"></div>
-            </div>
-            <div class="navbarLinksList">
+        <div class="navbarTop">
+            <h1>Thomas Cottage</h1>
+            <button id="navbarMenuBtn" class="navbarMenuClosed">
+                <div class="menuBar1" id='menuBar1'></div>
+                <div class="menuBar2" id='menuBar2'></div>
+                <div class="menuBar3" id='menuBar3'></div>
+            </button>
+        </div>
+        <div class="navbarLinksContainer" id="navbarLinksContainer">
+            <div class="navbarLinks">
                 <a href="/src/careHomeSite/pages/thomasCottageHome.html" class="activeLink">Home</a>
+                <a href="#">About our home</a>
+                <a href="#">Professional Services</a>
+                <a href="#">Careers</a>
             </div>
         </div>
     </nav>

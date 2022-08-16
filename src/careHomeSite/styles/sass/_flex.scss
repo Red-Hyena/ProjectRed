@@ -6,3 +6,9 @@
 .pictureContainer img {
     object-fit: cover;
 }
+
+@include lg {
+    .pictureContainer {
+        height: 600px;
+    }
+}

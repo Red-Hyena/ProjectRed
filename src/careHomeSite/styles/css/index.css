@@ -19,6 +19,11 @@ h1 {
   color: #ffffff;
 }
 
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 .pictureContainer {
   width: 100vw;
   height: 400px;
@@ -29,7 +34,12 @@ h1 {
   object-fit: cover;
 }
 
-.navbar {
+@media (min-width: 960px) {
+  .pictureContainer {
+    height: 600px;
+  }
+}
+.navbarTop {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -38,24 +48,99 @@ h1 {
   background-color: #1F2652;
 }
 
-.menuBar1, .menuBar2, .menuBar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #ffffff;
-  margin: 6px 0px;
-  transition: 0.25s;
+@media (max-width: 720px) {
+  #navbarMenuBtn {
+    background-color: hsla(0deg, 0%, 0%, 0);
+    border: none;
+  }
+  .menuBar1, .menuBar2, .menuBar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    transition: 0.25s;
+  }
+  .closeBtn.menuBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .closeBtn.menuBar2 {
+    opacity: 0;
+  }
+  .closeBtn.menuBar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 }
-
-.change .menuBar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+@media (max-width: 720px) {
+  .navbarLinksContainer {
+    height: 16rem;
+    width: 0%;
+    position: fixed;
+    left: 0;
+    top: 71px;
+    z-index: 1;
+    background-color: hsla(232deg, 45%, 22%, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .navbarLinks {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+  }
+  .navbarLinks a {
+    display: block;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.25s;
+  }
+  .navbarLinks a:hover, .navbarLinks a:focus {
+    color: aliceblue;
+  }
 }
-
-.change .menuBar2 {
-  opacity: 0;
+@media (min-width: 720px) {
+  #navbarMenuBtn {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #1F2652;
+  }
+  .navbarTop {
+    width: 30%;
+  }
+  .navbarLinksContainer {
+    width: 100%;
+  }
+  .navbarLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 32px;
+    padding: 32px;
+  }
+  .navbarLinks a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
-
-.change .menuBar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+@media (min-width: 1200px) {
+  .navbarLinks {
+    column-gap: 96px;
+    padding: 32px 96px;
+  }
+  .navbarLinks a {
+    font-size: 1.125rem;
+  }
 }
