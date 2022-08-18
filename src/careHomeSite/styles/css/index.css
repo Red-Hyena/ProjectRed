@@ -19,6 +19,16 @@ h1 {
   color: #ffffff;
 }
 
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .content h2 {
   color: #292929;
   border: none;
@@ -26,7 +36,13 @@ h1 {
 
 @media (min-width: 1200px) {
   h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
     font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
   }
 }
 .pictureContainer {
@@ -162,8 +178,7 @@ h1 {
 .footer {
   background-color: #1F2652;
 }
-
-h2 {
+.footer h2 {
   width: 150px;
   padding: 8px;
   margin: 0 auto;
@@ -231,6 +246,14 @@ h2 {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+.littleGreenCard .littleGreenCardFlex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .littleGreenCard a {
   display: inline-block;
   color: #ffffff;
@@ -243,14 +266,11 @@ h2 {
 
 @media (min-width: 960px) {
   .littleGreenCard {
-    postion: relative;
-    top: -80px;
+    position: relative;
+    top: -90px;
     width: 350px;
-    height: 160px;
+    height: 180px;
     padding: 24px;
-  }
-  .littleGreenCard a {
-    margin: 48px auto;
   }
 }
 .bigBlueCard {
@@ -262,6 +282,27 @@ h2 {
 .bigBlueCard h2 {
   color: #292929;
   border: none;
-  padding: 0;
+  padding: 8px 0;
   margin: 0;
+}
+.bigBlueCard a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 16px auto;
+  background-color: #1F2652;
+  border-radius: 4px;
+}
+.bigBlueCard p {
+  margin: 8px 0;
+}
+
+@media (min-width: 960px) {
+  .bigBlueCard {
+    margin: 64px 310px;
+  }
+  p {
+    margin: 16px 0;
+  }
 }
