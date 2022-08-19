@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    background-color: hsl(0, 0%, 11%, 0.75);
+    
+    a {
+        margin: 0 64px;
+        padding: 8px;
+    }
+    .activeLink {
+        border-bottom: 1px solid $pink_500;
+    }
+}

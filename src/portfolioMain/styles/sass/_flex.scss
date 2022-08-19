@@ -1,0 +1,13 @@
+.portfolioIntro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 605px;
+    margin: 124px 0 0 124px;
+}
+.introLine {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    column-gap: 16px;
+}
