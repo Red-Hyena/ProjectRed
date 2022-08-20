@@ -32,7 +32,7 @@
 }
 
 a {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #ffffff;
   text-decoration: none;
@@ -46,17 +46,45 @@ a:focus {
   color: #EC407A;
 }
 
+.cardHeader {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.cardText {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.cardLinkBtn {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #1C1C1C;
+}
+
+.cardLinkBtn:hover {
+  color: #1C1C1C;
+  border: 1px solid #F48FB1;
+}
+
+.cardLinkBtn:focus {
+  color: #1C1C1C;
+  border: 1px solid #F48FB1;
+}
+
 @media (min-width: 960px) {
   .introLine p {
     font-size: 2.25rem;
   }
 }
-.portfolioIntro {
+.introSection {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 605px;
-  margin: 124px 0 0 124px;
+  margin: 200px 0 0 124px;
 }
 
 .introLine {
@@ -66,19 +94,49 @@ a:focus {
   column-gap: 16px;
 }
 
-body {
-  width: 100vw;
+.mainSection {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.extraSection {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testSection {
+  height: 100%;
+}
+
+body, html {
   height: 100%;
   background-image: url(/src/portfolioMain/img/circuitBoardGreyscale-min.jpg);
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.introSection {
+  height: 100%;
+  background-color: opacity;
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
+  width: 100%;
   padding: 16px;
-  background-color: hsla(0deg, 0%, 11%, 0.75);
+  background-color: hsla(0deg, 0%, 11%, 0);
 }
 .navbar a {
   margin: 0 64px;
@@ -86,4 +144,138 @@ body {
 }
 .navbar .activeLink {
   border-bottom: 1px solid #EC407A;
+}
+
+.navbarScrolled {
+  background-color: hsl(0deg, 0%, 11%);
+}
+
+.cardLinkBtn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #EC407A;
+  background-color: #EC407A;
+  filter: drop-shadow(0px 2px 2px hsla(0deg, 0%, 0%, 0.14)) drop-shadow(0px 3px 1px hsla(0deg, 0%, 0%, 0.12)) drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.2));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 350px;
+  height: 450px;
+  padding: 32px;
+  background-color: #292929;
+}
+
+.cardProject1 {
+  border: 2px solid #AC61F0;
+}
+
+.cardProject1:hover {
+  border: 4px;
+}
+
+.cardProject2 {
+  border: 2px solid #5AF6F6;
+}
+
+.cardProject3 {
+  border: 2px solid #5AF6D1;
+}
+
+.cardAboutme {
+  border: 2px solid #AC61F0;
+}
+
+.cardContact {
+  border: 2px solid #5AF6F6;
+}
+
+.cardBtnContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.soundEffect {
+  display: none;
+}
+
+@keyframes circleMove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  22% {
+    transform: translate(350px, 0px);
+  }
+  25% {
+    transform: translate(350px, 50px);
+  }
+  50% {
+    transform: translate(350px, 450px);
+  }
+  72% {
+    transform: translate(0px, 450px);
+  }
+  75% {
+    transform: translate(0px, 400px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes borderAnimate {
+  0% {
+    stroke-dashoffset: 1600;
+  }
+  25% {
+    stroke-dashoffset: 1200;
+  }
+  50% {
+    stroke-dashoffset: 800;
+  }
+  75% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.cardSVG {
+  fill: transparent;
+  stroke: #AC61F0;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+}
+.cardSVG .basicPath {
+  stroke: #AC61F0;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cardSVG .svgCircle {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.cardSVG:hover {
+  stroke: #EC407A;
+  stroke-dashoffset: 0;
+  animation: borderAnimate 4.5s linear;
+}
+.cardSVG:hover path {
+  filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 3px #ffffff) drop-shadow(0px 0px 3px #F48FB1) drop-shadow(0px 0px 8px #F06292) drop-shadow(0px 0px 12px #EC407A);
+}
+.cardSVG:hover .svgCircle {
+  fill: #EC407A;
+  stroke: transparent;
+  animation-name: circleMove;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
 }

@@ -1,7 +1,15 @@
-body {
-    width: 100vw;
+body, html {
     height: 100%;
     background-image: url(/src/portfolioMain/img/circuitBoardGreyscale-min.jpg);
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+
+.introSection {
+    height: 100%;
+    background-color: opacity;
 }

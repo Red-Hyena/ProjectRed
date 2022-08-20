@@ -1,0 +1,97 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    width: 350px;
+    height: 450px;
+    padding: 32px;
+    background-color: $neutral_900;
+}
+.cardProject1 {
+    border: 2px solid $alt_purple_100;
+}
+.cardProject1:hover {
+    border: 4px;
+}
+.cardProject2 {
+    border: 2px solid $alt_cyan_100;
+}
+.cardProject3 {
+    border: 2px solid $alt_teal_100;
+}
+.cardAboutme {
+    border: 2px solid $alt_purple_100;
+}
+.cardContact {
+    border: 2px solid $alt_cyan_100;
+}
+.cardBtnContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.soundEffect {
+    display: none;
+}
+@keyframes circleMove {
+    0% {transform: translate(0px, 0px)}
+    22% {transform: translate(350px, 0px)}
+    25% {transform: translate(350px, 50px)}
+    50% {transform: translate(350px, 450px)}
+    72% {transform: translate(0px, 450px)}
+    75% {transform: translate(0px, 400px)}
+    100% {transform: translate(0px, 0px)}
+}
+
+@keyframes borderAnimate {
+    0% {stroke-dashoffset: 1600;}
+    25% {stroke-dashoffset: 1200;}
+    50% {stroke-dashoffset: 800;}
+    75% {stroke-dashoffset: 400;}
+    100% {stroke-dashoffset: 0;}
+}
+.cardSVG {
+    fill: transparent;
+    stroke: $alt_purple_100;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+
+    .basicPath {
+        stroke: $alt_purple_100;
+        stroke-width: 4px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .svgCircle {
+        fill: transparent;
+        stroke: transparent;
+    }
+}
+.cardSVG:hover {
+    stroke: $pink_500;
+    stroke-dashoffset: 0;
+    animation: borderAnimate 4.5s linear;
+    
+    path {
+        filter:
+        drop-shadow(0 0 1px $white)
+        drop-shadow(0 0 3px $white)
+        drop-shadow(0px 0px 3px $pink_300)
+        drop-shadow(0px 0px 8px $pink_400)
+        drop-shadow(0px 0px 12px $pink_500)
+    }
+    .svgCircle {
+        fill: $pink_500;
+        stroke: transparent;
+        animation-name: circleMove;
+        animation-duration: 4.5s;
+        animation-timing-function: linear;
+    }
+}

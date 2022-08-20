@@ -1,13 +1,30 @@
-.portfolioIntro {
+.introSection {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 605px;
-    margin: 124px 0 0 124px;
+    margin: 200px 0 0 124px;
 }
 .introLine {
     display: flex;
     flex-direction: row;
     padding: 4px;
     column-gap: 16px;
+}
+.mainSection {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.extraSection {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.testSection {
+    height: 100%;
 }

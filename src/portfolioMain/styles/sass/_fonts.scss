@@ -25,7 +25,7 @@
 }
 
 a {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: 500;
     color: $white;
     text-decoration: none;
@@ -36,6 +36,30 @@ a:hover {
 a:focus {
     color: $pink_500;
 }
+.cardHeader {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $white;
+}
+.cardText {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $white;
+}
+.cardLinkBtn {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $black;
+}
+.cardLinkBtn:hover {
+    color: $black;
+    border: 1px solid $pink_300;
+}
+.cardLinkBtn:focus {
+    color: $black;
+    border: 1px solid $pink_300;
+}
+
 @include lg {
     .introLine {
         p {
