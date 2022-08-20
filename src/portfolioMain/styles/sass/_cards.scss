@@ -46,12 +46,33 @@
     100% {transform: translate(0px, 0px)}
 }
 
-@keyframes borderAnimate {
+@keyframes dashRemove {
     0% {stroke-dashoffset: 1600;}
     25% {stroke-dashoffset: 1200;}
     50% {stroke-dashoffset: 800;}
     75% {stroke-dashoffset: 400;}
     100% {stroke-dashoffset: 0;}
+}
+@keyframes dashAdd {
+    0% {stroke-dashoffset: 0;}
+    25% {stroke-dashoffset: 1200;}
+    50% {stroke-dashoffset: 400;}
+    75% {stroke-dashoffset: 800;}
+    100% {stroke-dashoffset: 1600;}
+}
+@keyframes pulse {
+    0% {filter:
+        drop-shadow(0 0 1px $white)
+        drop-shadow(0 0 3px $white)
+        drop-shadow(0px 0px 3px $pink_300)
+        drop-shadow(0px 0px 8px $pink_400)
+        drop-shadow(0px 0px 12px $pink_500)}
+    100% {filter:
+        drop-shadow(0 0 2px $white)
+        drop-shadow(0 0 5px $white)
+        drop-shadow(0px 0px 6px $pink_300)
+        drop-shadow(0px 0px 10px $pink_400)
+        drop-shadow(0px 0px 15px $pink_500)}
 }
 .cardSVG {
     fill: transparent;
@@ -62,24 +83,42 @@
     stroke-dasharray: 1600;
     stroke-dashoffset: 1600;
 
-    .basicPath {
-        stroke: $alt_purple_100;
-        stroke-width: 4px;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
     .svgCircle {
         fill: transparent;
         stroke: transparent;
     }
 }
-.cardSVG:hover {
-    stroke: $pink_500;
+
+
+.basicPath {
+    fill: transparent;
+    stroke: $alt_purple_100;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 0;
     stroke-dashoffset: 0;
-    animation: borderAnimate 4.5s linear;
+}
+.neonPath {
+    fill: transparent;
+    stroke: $pink_500;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 1600;
+}
+.cardSVG:hover {
+    .basicPath {
+        animation: dashAdd 4.5s linear;
+    }
+    .neonPath {
+        stroke: $pink_500;
+        stroke-dashoffset: 0;
+        animation: dashRemove 4.5s linear;
+    }
     
-    path {
+    .neonPath {
         filter:
         drop-shadow(0 0 1px $white)
         drop-shadow(0 0 3px $white)

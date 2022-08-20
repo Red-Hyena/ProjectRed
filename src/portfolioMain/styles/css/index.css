@@ -227,7 +227,7 @@ body, html {
     transform: translate(0px, 0px);
   }
 }
-@keyframes borderAnimate {
+@keyframes dashRemove {
   0% {
     stroke-dashoffset: 1600;
   }
@@ -244,6 +244,31 @@ body, html {
     stroke-dashoffset: 0;
   }
 }
+@keyframes dashAdd {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke-dashoffset: 1200;
+  }
+  50% {
+    stroke-dashoffset: 400;
+  }
+  75% {
+    stroke-dashoffset: 800;
+  }
+  100% {
+    stroke-dashoffset: 1600;
+  }
+}
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 3px #ffffff) drop-shadow(0px 0px 3px #F48FB1) drop-shadow(0px 0px 8px #F06292) drop-shadow(0px 0px 12px #EC407A);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 5px #ffffff) drop-shadow(0px 0px 6px #F48FB1) drop-shadow(0px 0px 10px #F06292) drop-shadow(0px 0px 15px #EC407A);
+  }
+}
 .cardSVG {
   fill: transparent;
   stroke: #AC61F0;
@@ -253,23 +278,40 @@ body, html {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
 }
-.cardSVG .basicPath {
-  stroke: #AC61F0;
-  stroke-width: 4px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 .cardSVG .svgCircle {
   fill: transparent;
   stroke: transparent;
 }
 
-.cardSVG:hover {
+.basicPath {
+  fill: transparent;
+  stroke: #AC61F0;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+.neonPath {
+  fill: transparent;
+  stroke: #EC407A;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+}
+
+.cardSVG:hover .basicPath {
+  animation: dashAdd 4.5s linear;
+}
+.cardSVG:hover .neonPath {
   stroke: #EC407A;
   stroke-dashoffset: 0;
-  animation: borderAnimate 4.5s linear;
+  animation: dashRemove 4.5s linear;
 }
-.cardSVG:hover path {
+.cardSVG:hover .neonPath {
   filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 3px #ffffff) drop-shadow(0px 0px 3px #F48FB1) drop-shadow(0px 0px 8px #F06292) drop-shadow(0px 0px 12px #EC407A);
 }
 .cardSVG:hover .svgCircle {
