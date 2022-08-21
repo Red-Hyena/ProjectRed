@@ -9,21 +9,38 @@
 }
 .cardProject1 {
     border: 2px solid $alt_purple_100;
+    border-radius: 4px;
 }
 .cardProject1:hover {
-    border: 4px;
+    animation: borderGlowPurple 2s alternate infinite;
 }
 .cardProject2 {
     border: 2px solid $alt_cyan_100;
+    border-radius: 4px;
+}
+.cardProject2:hover {
+    animation: borderGlowTeal 2s alternate infinite;
 }
 .cardProject3 {
     border: 2px solid $alt_teal_100;
+    border-radius: 4px;
+}
+.cardProject3:hover {
+    animation: borderGlowCyan 2s alternate infinite;
 }
 .cardAboutme {
     border: 2px solid $alt_purple_100;
+    border-radius: 4px;
+}
+.cardAboutme:hover {
+    animation: borderGlowPurple 2s alternate infinite;
 }
 .cardContact {
     border: 2px solid $alt_cyan_100;
+    border-radius: 4px;
+}
+.cardContact:hover {
+    animation: borderGlowTeal 1s alternate infinite;
 }
 .cardBtnContainer {
     height: 100%;
@@ -33,104 +50,45 @@
     align-items: flex-end;
 }
 
-.soundEffect {
-    display: none;
-}
-@keyframes circleMove {
-    0% {transform: translate(0px, 0px)}
-    22% {transform: translate(350px, 0px)}
-    25% {transform: translate(350px, 50px)}
-    50% {transform: translate(350px, 450px)}
-    72% {transform: translate(0px, 450px)}
-    75% {transform: translate(0px, 400px)}
-    100% {transform: translate(0px, 0px)}
-}
-
-@keyframes dashRemove {
-    0% {stroke-dashoffset: 1600;}
-    25% {stroke-dashoffset: 1200;}
-    50% {stroke-dashoffset: 800;}
-    75% {stroke-dashoffset: 400;}
-    100% {stroke-dashoffset: 0;}
-}
-@keyframes dashAdd {
-    0% {stroke-dashoffset: 0;}
-    25% {stroke-dashoffset: 1200;}
-    50% {stroke-dashoffset: 400;}
-    75% {stroke-dashoffset: 800;}
-    100% {stroke-dashoffset: 1600;}
-}
-@keyframes pulse {
+@keyframes borderGlowPurple {
     0% {filter:
         drop-shadow(0 0 1px $white)
         drop-shadow(0 0 3px $white)
-        drop-shadow(0px 0px 3px $pink_300)
-        drop-shadow(0px 0px 8px $pink_400)
-        drop-shadow(0px 0px 12px $pink_500)}
+        drop-shadow(0px 0px 3px hsla(271, 83%, 76%, 1))
+        drop-shadow(0px 0px 8px hsla(271, 83%, 71%, 1))
+        drop-shadow(0px 0px 12px hsla(271, 83%, 66%, 1))}
     100% {filter:
         drop-shadow(0 0 2px $white)
-        drop-shadow(0 0 5px $white)
-        drop-shadow(0px 0px 6px $pink_300)
-        drop-shadow(0px 0px 10px $pink_400)
-        drop-shadow(0px 0px 15px $pink_500)}
+        drop-shadow(0 0 4px $white)
+        drop-shadow(0px 0px 6px hsla(271, 83%, 76%, 1))
+        drop-shadow(0px 0px 10px hsla(271, 83%, 71%, 1))
+        drop-shadow(0px 0px 14px hsla(271, 83%, 66%, 1))}
 }
-.cardSVG {
-    fill: transparent;
-    stroke: $alt_purple_100;
-    stroke-width: 4px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 1600;
-    stroke-dashoffset: 1600;
-
-    .svgCircle {
-        fill: transparent;
-        stroke: transparent;
-    }
-}
-
-
-.basicPath {
-    fill: transparent;
-    stroke: $alt_purple_100;
-    stroke-width: 4px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
-}
-.neonPath {
-    fill: transparent;
-    stroke: $pink_500;
-    stroke-width: 4px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 1600;
-    stroke-dashoffset: 1600;
-}
-.cardSVG:hover {
-    .basicPath {
-        animation: dashAdd 4.5s linear;
-    }
-    .neonPath {
-        stroke: $pink_500;
-        stroke-dashoffset: 0;
-        animation: dashRemove 4.5s linear;
-    }
-    
-    .neonPath {
-        filter:
+@keyframes borderGlowTeal {
+    0% {filter:
         drop-shadow(0 0 1px $white)
         drop-shadow(0 0 3px $white)
-        drop-shadow(0px 0px 3px $pink_300)
-        drop-shadow(0px 0px 8px $pink_400)
-        drop-shadow(0px 0px 12px $pink_500)
-    }
-    .svgCircle {
-        fill: $pink_500;
-        stroke: transparent;
-        animation-name: circleMove;
-        animation-duration: 4.5s;
-        animation-timing-function: linear;
-    }
+        drop-shadow(0px 0px 3px hsla(166, 90%, 76%, 1))
+        drop-shadow(0px 0px 8px hsla(166, 90%, 71%, 1))
+        drop-shadow(0px 0px 12px hsla(166, 90%, 66%, 1))}
+    100% {filter:
+        drop-shadow(0 0 2px $white)
+        drop-shadow(0 0 4px $white)
+        drop-shadow(0px 0px 6px hsla(166, 90%, 76%, 1))
+        drop-shadow(0px 0px 10px hsla(166, 90%, 71%, 1))
+        drop-shadow(0px 0px 14px hsla(166, 90%, 66%, 1))}
+}
+@keyframes borderGlowCyan {
+    0% {filter:
+        drop-shadow(0 0 1px $white)
+        drop-shadow(0 0 3px $white)
+        drop-shadow(0px 0px 3px hsla(180, 90%, 76%, 1))
+        drop-shadow(0px 0px 8px hsla(180, 90%, 71%, 1))
+        drop-shadow(0px 0px 12px hsla(180, 90%, 66%, 1))}
+    100% {filter:
+        drop-shadow(0 0 2px $white)
+        drop-shadow(0 0 4px $white)
+        drop-shadow(0px 0px 6px hsla(180, 90%, 76%, 1))
+        drop-shadow(0px 0px 10px hsla(180, 90%, 71%, 1))
+        drop-shadow(0px 0px 14px hsla(180, 90%, 66%, 1))}
 }
