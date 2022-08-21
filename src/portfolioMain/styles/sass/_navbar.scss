@@ -6,7 +6,8 @@
     flex-direction: row;
     width: 100%;
     padding: 16px;
-    background-color: hsla(0, 0%, 11%, 0.0);
+    background-color: hsla(0, 0%, 11%, 0.95);
+    border-bottom: 1px solid $neutral_900;
     
     a {
         margin: 0 64px;

@@ -1,24 +1,15 @@
 const introSection = document.querySelector('.introSection');
-const navbar = document.querySelector('.navbar');
 
-
-const introSectionOptions = {
-
+const options = {
+    root: null,
+    threshold: 0
 };
 
 
+const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        console.log(entry);
+    });
+}, options)
 
-const introSectionObserver = new IntersectionObserver(function(
-    entries, introSectionObserver){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) {
-                console.log(entry);
-                navbar.classList.add('navbarScrolled');
-            } else {
-                console.log(entry);
-                navbar.classList.remove('navbarScrolled');
-            }
-        });
-    }, introSectionOptions);
-
-introSectionObserver.observe(introSection);
+observer.observe(introSection)
