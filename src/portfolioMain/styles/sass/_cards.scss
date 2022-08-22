@@ -12,28 +12,28 @@
     border-radius: 4px;
 }
 .cardProject1:hover {
-    animation: borderGlowPurple 2s alternate infinite;
+    animation: borderGlowPurple 1s alternate infinite;
 }
 .cardProject2 {
     border: 2px solid $alt_cyan_100;
     border-radius: 4px;
 }
 .cardProject2:hover {
-    animation: borderGlowTeal 2s alternate infinite;
+    animation: borderGlowTeal 1s alternate infinite;
 }
 .cardProject3 {
     border: 2px solid $alt_teal_100;
     border-radius: 4px;
 }
 .cardProject3:hover {
-    animation: borderGlowCyan 2s alternate infinite;
+    animation: borderGlowCyan 1s alternate infinite;
 }
 .cardAboutme {
     border: 2px solid $alt_purple_100;
     border-radius: 4px;
 }
 .cardAboutme:hover {
-    animation: borderGlowPurple 2s alternate infinite;
+    animation: borderGlowPurple 1s alternate infinite;
 }
 .cardContact {
     border: 2px solid $alt_cyan_100;
@@ -92,3 +92,5 @@
         drop-shadow(0px 0px 10px hsla(180, 90%, 71%, 1))
         drop-shadow(0px 0px 14px hsla(180, 90%, 66%, 1))}
 }
+
+// About me Cards

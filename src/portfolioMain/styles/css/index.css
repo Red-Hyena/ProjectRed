@@ -75,6 +75,18 @@ a:focus {
   border: 1px solid #F48FB1;
 }
 
+.aboutMeSection h1, .aboutMeSection h2, .aboutMeSection h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.aboutMeSection p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 16px 0;
+}
+
 @media (min-width: 960px) {
   .introLine p {
     font-size: 2.25rem;
@@ -116,22 +128,49 @@ a:focus {
   height: 100%;
 }
 
-.aboutMe {
+.aboutMeSection {
+  margin-top: 200px;
+}
+
+.sectionTextFlex {
+  width: 600px;
+}
+.sectionTextFlex .sectionTextCard {
+  width: 564px;
+  padding: 32px;
+  background-color: hsla(0deg, 0%, 11%, 0.85);
+  border-radius: 4px;
+}
+
+.sectionImgFlex {
+  width: 600px;
+}
+
+.whoSection {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  justify-content: center;
+}
+
+.designSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.aboutMeLeftSide {
-  width: 50%;
-}
-
-.aboutMeRightSide {
-  width: 50%;
-  object-fit: contain;
+.developmentSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 body, html {
@@ -150,6 +189,7 @@ body, html {
 
 .navbar {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   display: flex;
@@ -172,6 +212,8 @@ body, html {
 }
 
 .cardLinkBtn {
+  position: relative;
+  z-index: 1;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid #EC407A;
@@ -195,7 +237,7 @@ body, html {
 }
 
 .cardProject1:hover {
-  animation: borderGlowPurple 2s alternate infinite;
+  animation: borderGlowPurple 1s alternate infinite;
 }
 
 .cardProject2 {
@@ -204,7 +246,7 @@ body, html {
 }
 
 .cardProject2:hover {
-  animation: borderGlowTeal 2s alternate infinite;
+  animation: borderGlowTeal 1s alternate infinite;
 }
 
 .cardProject3 {
@@ -213,7 +255,7 @@ body, html {
 }
 
 .cardProject3:hover {
-  animation: borderGlowCyan 2s alternate infinite;
+  animation: borderGlowCyan 1s alternate infinite;
 }
 
 .cardAboutme {
@@ -222,7 +264,7 @@ body, html {
 }
 
 .cardAboutme:hover {
-  animation: borderGlowPurple 2s alternate infinite;
+  animation: borderGlowPurple 1s alternate infinite;
 }
 
 .cardContact {
