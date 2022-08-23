@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="/src/portfolioMain/img/carehomeFinal0001-0360.mp4"
+    type="video/mp4" class="vid" loop></video>
+
+    <script>
+        let vid = document.querySelector('.vid');
+
+        vid.addEventListener('mouseover', () => {
+            vid.play();
+        })
+        vid.addEventListener('mouseout', () => {
+            vid.currentTime = 0;
+            vid.pause();
+        })
+    </script>
+</body>
+</html>
