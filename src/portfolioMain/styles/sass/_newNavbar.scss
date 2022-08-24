@@ -1,0 +1,10 @@
+.navbar {
+    width: 100%;
+    padding: 32px 64px;
+    background-color: $white;
+    column-gap: 64px;
+
+    a {
+        margin-right: 64px;
+    }
+}

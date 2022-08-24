@@ -13,11 +13,12 @@
 
 @import '_breakpoints.scss';
 @import '_colours.scss';
-@import '_fonts.scss';
-@import '_flex.scss';
-@import '_parallax.scss';
+body {
+    background-color: $black;
+}
+@import '_newFlex.scss';
+@import '_newFonts.scss';
+@import '_newButtons.scss';
+@import 'animations.scss';
 
-@import '_navbar.scss';
-@import '_buttons.scss';
-@import '_cards.scss';
-@import '_scrollbar.scss';
+@import '_newNavbar.scss';

@@ -1,0 +1,11 @@
+.enterSiteBtn {
+    background-color: $black;
+    border: 1px solid $white;
+    padding: 16px;
+}
+.enterSiteBtn:hover {
+    border: 1px solid $pink_500;
+}
+.enterSiteBtn:focus {
+    border: 1px solid $pink_500;
+}

@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/portfolioMain/styles/css/index.css">
     <title>Document</title>
 </head>
 <body>
-    <video src="/src/portfolioMain/img/carehomeFinal0001-0360.mp4"
-    type="video/mp4" class="vid" loop></video>
+    <navbar class="navbar hidden">
+        <a href="newIndex.html" class="activeLink">Home</a>
+        <a href="/src/portfolioMain/pages/projects.html">Projects</a>
+        <a href="/src/portfolioMain/pages/aboutme.html">About me</a>
+        <a href="/src/portfolioMain/pages/contact.html">Contact</a>
+    </navbar>
+
+    <section class="introScreen visible" id="introScreen">
+        <div class="introLine introLine1">
+            <p>Hi, I'm</p>
+        </div>
+        <div class="introLine introLine2">
+            <p class="colorText1">Anthony Dixon</p>            
+        </div>
+        <div class="introLine introLine3">
+            <p>A</p>
+            <p class="colorText2">&#60;web developer&#62;</p>
+            <p>from</p>
+            <p class="colorText3">Blyth</p>
+        </div>
+        <div class="introLine introLine4">
+            <button type="button" class="enterSiteBtn">Enter Site</button>
+        </div>
+    </section>
+
+    <section class="mainScreen hidden" id="mainScreen">
+
+        <section class="videoFlex">
+            <div class="videoContainer vContainer1">
+                <video src="/src/portfolioMain/img/carehomeFinalVid.mp4" width="300" height="400"
+                type="video/mp4" class="vid" loop></video>
+            </div>
+            <div class="videoContainer vContainer2"></div>
+            <div class="videoContainer vContainer3"></div>
+            <div class="videoContainer vContainer4"></div>
+        </section>
+
+        <!--<video src="/src/portfolioMain/img/carehomeFinalVid.mp4"
+    type="video/mp4" class="vid" loop></video>-->
+    </section>
 
     <script>
         let vid = document.querySelector('.vid');
@@ -21,5 +60,6 @@
             vid.pause();
         })
     </script>
+    <script src="/src/portfolioMain/js/enterSiteScript.js"></script>
 </body>
 </html>
