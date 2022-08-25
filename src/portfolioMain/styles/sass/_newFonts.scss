@@ -66,6 +66,40 @@
 
     }
 }
+.contactSection {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_purple_100;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_teal_100;
+    }
+    p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $white;
+
+    }
+    a {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $white;
+        text-decoration: none;
+    }
+    a:hover {
+        border-bottom: 2px solid $pink_500;
+    }
+    a:focus {
+        border-bottom: 2px solid $pink_500;
+    }
+}
 // Buttons & Links
 .enterSiteBtn {
     color: $white;

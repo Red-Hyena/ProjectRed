@@ -265,10 +265,6 @@ button {
   box-shadow: 0px 2px 2px hsla(0deg, 0%, 0%, 0.14), 0px 3px 1px hsla(0deg, 0%, 0%, 0.14), 0px 1px 5px hsla(0deg, 0%, 0%, 0.2);
 }
 
-.submit_btn {
-  width: 500px;
-}
-
 button:hover {
   background-color: #06745A;
   border-color: #06745A;
@@ -651,4 +647,17 @@ input[type=radio]:checked {
   .activeFormFlex {
     margin: 64px 20%;
   }
+}
+.returnPortfolioBtn {
+  display: block;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #EC407A;
+  padding: 8px;
+  font-size: 1rem;
+  font-family: monospace;
+  color: #292929;
+  text-decoration: none;
+  border-radius: 4px;
 }

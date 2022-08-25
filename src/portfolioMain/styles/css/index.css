@@ -42,9 +42,16 @@ body {
   height: 80vh;
 }
 
-.videoContainer {
-  width: 300px;
-  height: 400px;
+video {
+  border-radius: 4px;
+}
+
+.videoContainer:hover {
+  border: 2px solid #EC407A;
+  border-radius: 4px;
+}
+.videoContainer:hover .videoHeader {
+  border-bottom: none;
 }
 
 .hidden {
@@ -94,6 +101,14 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 64px 128px;
+  row-gap: 64px;
 }
 
 /*  Size Chart:
@@ -159,6 +174,38 @@ body {
   color: #ffffff;
 }
 
+.contactSection h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 64px 0 32px 0;
+  border-bottom: 1px solid #AC61F0;
+}
+.contactSection h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 64px 0 32px 0;
+  border-bottom: 1px solid #5AF6B3;
+}
+.contactSection p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.contactSection a {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+.contactSection a:hover {
+  border-bottom: 2px solid #EC407A;
+}
+.contactSection a:focus {
+  border-bottom: 2px solid #EC407A;
+}
+
 .enterSiteBtn {
   color: #ffffff;
   font-size: 1.25rem;
@@ -211,6 +258,18 @@ body {
 
 .enterSiteBtn:focus {
   border: 1px solid #EC407A;
+}
+
+.returnPortfolioBtn {
+  display: block;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #EC407A;
+  padding: 8px;
+  color: #1C1C1C;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .fadeOut {

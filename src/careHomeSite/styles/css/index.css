@@ -306,3 +306,16 @@ p {
     margin: 16px 0;
   }
 }
+.returnPortfolioBtn {
+  display: block;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background-color: #EC407A;
+  padding: 8px;
+  font-size: 1rem;
+  font-family: monospace;
+  color: #292929;
+  text-decoration: none;
+  border-radius: 4px;
+}

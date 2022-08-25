@@ -26,3 +26,17 @@ html {
 @import '_cards.scss';
 @import '_forms.scss';
 @import '_customForm.scss';
+
+.returnPortfolioBtn {
+    display: block;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background-color: #EC407A;;
+    padding: 8px;
+    font-size: 1rem;
+    font-family: monospace;
+    color: $black;
+    text-decoration: none;
+    border-radius: 4px;
+}
