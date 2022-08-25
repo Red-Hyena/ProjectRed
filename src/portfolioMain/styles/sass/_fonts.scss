@@ -178,3 +178,29 @@ a {
 .videoHeader3 {
     border-bottom: 1px solid $alt_cyan_100;
 }
+
+// Footer
+.footer {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: $white;
+    h6 {
+        margin-left: 64px;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: $white;
+    }
+    p {
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $white;
+    }
+    a {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: $white;
+    }
+    a:hover {
+        border-bottom: 1px solid $pink_500;
+    }
+}
