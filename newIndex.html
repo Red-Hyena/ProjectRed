@@ -9,7 +9,7 @@
 </head>
 <body>
     <navbar class="navbar hidden">
-        <a href="newIndex.html" class="activeLink">Home</a>
+        <a href="/newIndex.html" class="activeLink">Home</a>
         <a href="/src/portfolioMain/pages/projects.html">Projects</a>
         <a href="/src/portfolioMain/pages/aboutme.html">About me</a>
         <a href="/src/portfolioMain/pages/contact.html">Contact</a>
@@ -34,32 +34,28 @@
     </section>
 
     <section class="mainScreen hidden" id="mainScreen">
-
-        <section class="videoFlex">
+        <div class="videoFlex">
             <div class="videoContainer vContainer1">
                 <video src="/src/portfolioMain/img/carehomeFinalVid.mp4" width="300" height="400"
-                type="video/mp4" class="vid" loop></video>
+                type="video/mp4" class="video1" loop></video>
+                <p class="videoHeader videoHeader1">Carehome Template</p>
             </div>
-            <div class="videoContainer vContainer2"></div>
-            <div class="videoContainer vContainer3"></div>
-            <div class="videoContainer vContainer4"></div>
-        </section>
-
-        <!--<video src="/src/portfolioMain/img/carehomeFinalVid.mp4"
-    type="video/mp4" class="vid" loop></video>-->
+            <div class="videoContainer vContainer2">
+                <video src="/src/portfolioMain/img/cupcakeFinalVid.mp4" width="300" height="400"
+                type="video/mp4" class="video2" loop></video>
+                <p class="videoHeader videoHeader2">Cupcake Shop</p>
+            </div>
+            <div class="videoContainer vContainer3">
+                <video src="/src/portfolioMain/img/sportsballFinalVid.mp4" width="300" height="400"
+                type="video/mp4" class="video3" loop></video>
+                <p class="videoHeader videoHeader3">Sportsball FC</p>
+            </div>
+            <div class="videoContainer vContainer4">
+                <img width="300" height="400">
+                <p class="videoHeader videoHeader4">Future Portfolio</p>
+            </div>
+        </div>
     </section>
-
-    <script>
-        let vid = document.querySelector('.vid');
-
-        vid.addEventListener('mouseover', () => {
-            vid.play();
-        })
-        vid.addEventListener('mouseout', () => {
-            vid.currentTime = 0;
-            vid.pause();
-        })
-    </script>
     <script src="/src/portfolioMain/js/enterSiteScript.js"></script>
 </body>
 </html>

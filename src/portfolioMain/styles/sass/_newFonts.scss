@@ -22,6 +22,50 @@
         color: $alt_cyan_100;
     }
 }
+
+.leftSideContainer {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_purple_100;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_teal_100;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_cyan_100;
+    }
+    .subHeader {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: $white;
+        margin: 16px 0;
+    }
+    ul {
+        line-height: 1.75rem;
+    }
+    li {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $white;
+    }
+    p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $white;
+
+    }
+}
 // Buttons & Links
 .enterSiteBtn {
     color: $white;
@@ -33,7 +77,7 @@
         font-size: 1rem;
         font-weight: 500;
         width: 90px;
-        color: $black;
+        color: $white;
         text-decoration: none;
         text-align: center;
     }
@@ -43,4 +87,21 @@
     a:hover {
         border-bottom: 2px solid $pink_500;
     }
+}
+
+.videoHeader {
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 16px;
+    color: $white;
+    text-align: center;
+}
+.videoHeader1 {
+    border-bottom: 1px solid $alt_purple_100;
+}
+.videoHeader2 {
+    border-bottom: 1px solid $alt_teal_100;
+}
+.videoHeader3 {
+    border-bottom: 1px solid $alt_cyan_100;
 }
