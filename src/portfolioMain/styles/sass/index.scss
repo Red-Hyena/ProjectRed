@@ -16,11 +16,11 @@
 body {
     background-color: $black;
 }
-@import '_newFlex.scss';
-@import '_newFonts.scss';
-@import '_newButtons.scss';
+@import '_flex.scss';
+@import '_fonts.scss';
+@import '_buttons.scss';
 @import 'animations.scss';
 
-@import '_newNavbar.scss';
+@import '_navbar.scss';
 
 @import '_mobile.scss';

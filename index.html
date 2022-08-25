@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Dixon Portfolio - Home Page</title>
     <link rel="stylesheet" href="/src/portfolioMain/styles/css/index.css">
-    <script src="/src/portfolioMain/js/intersectionObserver.js" defer></script>
-    
+    <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="/index.html" class="activeLink">Home</a>
+    <navbar class="navbar hidden">
+        <a href="/newIndex.html" class="activeLink">Home</a>
         <a href="/src/portfolioMain/pages/projects.html">Projects</a>
         <a href="/src/portfolioMain/pages/aboutme.html">About me</a>
         <a href="/src/portfolioMain/pages/contact.html">Contact</a>
-    </nav>
+    </navbar>
 
-    <section class="introSection section">
+    <section class="introScreen visible" id="introScreen">
         <div class="introLine introLine1">
             <p>Hi, I'm</p>
         </div>
@@ -30,55 +28,34 @@
             <p>from</p>
             <p class="colorText3">Blyth</p>
         </div>
-    </section>
-
-    <section class="mainSection section">
-        <div class="card cardProject1">
-            <div class="borderAnimateCard1"></div>
-            <h2 class="cardHeader">Project #1</h2>
-            <p class="cardText">For this project I used a library to create an image carousel and wrote a simple 
-                script to handle cost updating. Mobile/Desktop compatible.</p>
-            <div class="cardBtnContainer">
-                <a class="cardLinkBtn">Project #1</a>
-            </div>
-        </div>
-        <div class="card cardProject2">
-            <div class="borderAnimateCard2"></div>
-            <h2 class="cardHeader">Project #2</h2>
-            <p class="cardText">I created a fake team to demonstrate a mobile responsive page for a non-league football team. 
-                I wrote a script that can handle dynamic data and build a fixtures/results page.</p>
-            <div class="cardBtnContainer">
-                <a class="cardLinkBtn">Project #2</a>
-            </div>
-        </div>
-        <div class="card cardProject3">
-            <div class="borderAnimateCard3"></div>
-            <h2 class="cardHeader">Project #3</h2>
-            <p class="cardText">This is a starting template I made that focuses on accessibility and is also responsive.</p>
-            <div class="cardBtnContainer">
-                <a class="cardLinkBtn">Project #3</a>
-            </div>
+        <div class="introLine introLine4">
+            <button type="button" class="enterSiteBtn">Enter Site</button>
         </div>
     </section>
 
-    <section class="extraSection section">
-        <div class="card cardAboutme">
-            <div class="borderAnimateCard4"></div>
-            <h2 class="cardHeader">About me</h2>
-            <p class="cardText">My main skills are HTML, CSS and JavaScript with a focus on accessibility and responsive design.</p>
-            <div class="cardBtnContainer">
-                <a class="cardLinkBtn">About me</a>
-            </div>
-        </div>
-        <div class="card cardContact">
-            <div class="borderAnimateCard5"></div>
-            <h2 class="cardHeader">Contact</h2>
-            <p class="cardText">If you have any questions feel free to get in touch.</p>
-            <div class="cardBtnContainer">
-                <a class="cardLinkBtn">Contact</a>
-            </div>
+    <section class="mainScreen hidden" id="mainScreen">
+        <div class="videoFlex">
+            <a class="videoContainer vContainer1" href="/src/careHomeSite/pages/thomasCottageHome.html">
+                <video src="/src/portfolioMain/img/carehomeFinalVid.mp4" width="300" height="400"
+                type="video/mp4" class="video1" loop></video>
+                <p class="videoHeader videoHeader1">Carehome Template</p>
+            </a>
+            <a class="videoContainer vContainer2" href="/src/cupcakeSite/pages/cupcakeHome.html">
+                <video src="/src/portfolioMain/img/cupcakeFinalVid.mp4" width="300" height="400"
+                type="video/mp4" class="video2" loop></video>
+                <p class="videoHeader videoHeader2">Cupcake Shop</p>
+            </a>
+            <a class="videoContainer vContainer3" href="/src/sportsballSite/pages/sportsballHome.html">
+                <video src="/src/portfolioMain/img/sportsballFinalVid.mp4" width="300" height="400"
+                type="video/mp4" class="video3" loop></video>
+                <p class="videoHeader videoHeader3">Sportsball FC</p>
+            </a>
+            <a class="videoContainer vContainer4">
+                <img width="300" height="400">
+                <p class="videoHeader videoHeader4">Future Portfolio</p>
+            </a>
         </div>
     </section>
-    
+    <script src="/src/portfolioMain/js/enterSiteScript.js"></script>
 </body>
 </html>
