@@ -90,3 +90,59 @@ video {
     padding: 64px 128px;
     row-gap: 64px;
 }
+
+// Projects
+.projectSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    padding: 64px;
+}
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.textSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    row-gap: 16px;
+}
+.imageSection {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    img {
+        border-radius: 4px;
+    }
+}
+
+@include wildCard {
+    .introLine {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 16px;
+    }
+    .navbar {
+        padding: 8px 16px;
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+    .navVisibleAlt {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: aqua;
+    }
+    .videoFlex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}

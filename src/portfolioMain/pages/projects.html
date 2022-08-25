@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Dixon Portfolio - Home Page</title>
+    <title>Anthony Dixon Portfolio - Projects Page</title>
     <link rel="stylesheet" href="/src/portfolioMain/styles/css/index.css">
 </head>
 <body>
@@ -15,6 +15,65 @@
         <a href="/src/portfolioMain/pages/contact.html">Contact</a>
     </nav>
     
+    <section class="projectSection">
+        <div class="carehomeSection projectContainer">
+            <div class="textSection">
+                <h1>Project #1 - Carehome Template</h1>
+                <p>For the care home project I wanted to focus on accessibility. 
+                The design utilizes a bright green against a deep purple, 
+                which meets WCAG AA for readability. I also tried to incorporate 
+                aria labels for the first time.</p>
+                <p>The design is fairly simple with a focus on readability by using 
+                slightly larger font sizes. The website also works on mobile devices as well.</p>
+                <a class="projectLink" href="/src/careHomeSite/pages/thomasCottageHome.html">Go to Carehome Project</a>
+            </div>
+            <div class="imageSection">
+                <img src="/src/portfolioMain/img/temp/carehomeSnapshoth600v800.png"
+                width="300" height="400">
+            </div>          
+        </div>
+        <div class="cupcakeSection projectContainer">
+            <div class="textSection">
+                <h2>Project #2 - Cupcake Shop Example</h1>
+                <p>For the Cupcake shop I wanted to create a website that used a 
+                script to keep a running cost. The website uses “owl-carousel” and is implemented 
+                with jQuery. This allowed me to build a carousel that allows the user 
+                to swipe on mobile devices to select a cupcake before being taken to the custom cupcake page.</p>
+                <p>The script I wrote for the cost update essentially just listens 
+                for which option is selected, returns that value and then the total
+                cost takes the value of each option selected and adds them together.  
+                For the text icing, it removes any white space and then multiplies the length of the
+                 string by 0.10 and adds this to the total cost. (10p). </p>
+                 <a class="projectLink" href="/src/cupcakeSite/pages/cupcakeHome.html">Go to Cupcake Shop Project</a>
+            </div>
+            <div class="imageSection">
+                <img src="/src/portfolioMain/img/temp/cupcakeSnapshoth600v800.png"
+                width="300" height="400">
+            </div>          
+        </div>
+        <div class="sportsballSection projectContainer">
+            <div class="textSection">
+                <h3>Project #3 - Sportsball FC</h1>
+                <p>For Sportsball FC I wanted to create a fictional non-league football team 
+                and give them some fixtures. Non-league teams often have fixture changes so the 
+                difficulty was in creating a website that a non-technical user could interact 
+                with to update fixtures and the website essentially builds itself.</p>
+                <p>For the script I used objects with a constructor function to create the data. 
+                The script once a user clicks “August” for example, then searches these objects 
+                for any arrays that have “August” in the month category. It then creates elements 
+                for each part of the array and uses an IF statement to determine if it is a home or away game. 
+                So essentially each time a user click a month button, the script builds the page. 
+                I'm hoping to expand this in the future so that it could take a Spreadsheet and convert
+                it to an array via a string. This would make it easier on a 
+                non-league club's staff member if they weren't familiar with computers.</p>
+                <a class="projectLink" href="/src/sportsballSite/pages/sportsballHome.html">Go to Sportsball FC Project</a>
+            </div>
+            <div class="imageSection">
+                <img src="/src/portfolioMain/img/temp/sportsballSnapshoth600v800.png"
+                width="300" height="400">
+            </div>          
+        </div>
+    </section>
     
 </body>
 </html>

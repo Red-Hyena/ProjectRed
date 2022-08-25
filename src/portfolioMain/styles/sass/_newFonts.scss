@@ -85,7 +85,6 @@
         font-size: 1.125rem;
         font-weight: 400;
         color: $white;
-
     }
     a {
         font-size: 1.125rem;
@@ -99,6 +98,44 @@
     a:focus {
         border-bottom: 2px solid $pink_500;
     }
+}
+.textSection {
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_purple_100;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_teal_100;
+    }
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+        margin: 64px 0 32px 0;
+        border-bottom: 1px solid $alt_cyan_100;
+    }
+    p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: $white;
+    }
+}
+.projectLink {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $pink_500;
+    text-decoration: none;
+    padding: 8px;
+}
+.projectLink:hover {
+    border-bottom: 1px solid $pink_500;
 }
 // Buttons & Links
 .enterSiteBtn {
@@ -122,7 +159,9 @@
         border-bottom: 2px solid $pink_500;
     }
 }
-
+a {
+    text-decoration: none;
+}
 .videoHeader {
     font-size: 1.125rem;
     font-weight: 500;
